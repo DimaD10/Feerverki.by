@@ -458,6 +458,54 @@ body::-webkit-scrollbar-thumb {
   color: #646469;
 }
 
+[data-aos=rm-opacity] {
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 10s;
+  transition: opacity ease-in-out 10s;
+}
+[data-aos=rm-opacity].aos-animate {
+  opacity: 1;
+}
+
+[data-aos=category-card-animate] {
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 10s;
+  transition: opacity ease-in-out 10s;
+}
+[data-aos=category-card-animate] .category-card__title, [data-aos=category-card-animate] .service-card__icon {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: opacity cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, -webkit-transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s;
+  transition: opacity cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, -webkit-transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s;
+  transition: opacity cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s;
+  transition: opacity cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, -webkit-transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s;
+}
+[data-aos=category-card-animate] .category-card__descr {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: opacity cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, -webkit-transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s;
+  transition: opacity cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, -webkit-transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s;
+  transition: opacity cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s;
+  transition: opacity cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s, -webkit-transform cubic-bezier(0.38, -0.6, 0.32, 1.1) 0.8s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+[data-aos=category-card-animate].aos-animate {
+  opacity: 1;
+}
+[data-aos=category-card-animate].aos-animate .category-card__title, [data-aos=category-card-animate].aos-animate .service-card__icon {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+[data-aos=category-card-animate].aos-animate .category-card__descr {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .header {
   z-index: 999;
   position: fixed;
