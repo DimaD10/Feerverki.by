@@ -242,6 +242,28 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
+.stroke-button {
+  height: 44px;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  -webkit-transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
+  color: #E81212;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid #E81212;
+}
+.stroke-button:hover {
+  background-color: #FDEFB6;
+  border: 1px solid transparent;
+}
+
 .article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,6 +480,23 @@ body::-webkit-scrollbar-thumb {
   color: #646469;
 }
 
+.product-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.product-list__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 [data-aos=rm-opacity] {
   opacity: 0;
   -webkit-transition: opacity ease-in-out 10s;
@@ -1903,6 +1942,113 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.main__main-product-list {
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .main__main-product-list {
+    margin-bottom: calc(50px + 50 * (100vw - 320px) / 880);
+  }
+}
+.main .product-list__button {
+  margin: 0 auto;
+}
+.main .product-list__header {
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.main .product-list__category {
+  background-color: transparent;
+  height: 41px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: 1px solid transparent;
+  -webkit-transition: outline ease-in-out 0.5s;
+  transition: outline ease-in-out 0.5s;
+}
+.main .product-list__category path {
+  fill: #443E3E;
+}
+.main .product-list__category:hover {
+  outline: 1px solid #443E3E;
+}
+.main .product-list__category_current {
+  cursor: none;
+  pointer-events: none;
+  position: relative;
+}
+.main .product-list__category_current::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#E81212), to(#FCCD05));
+  background: linear-gradient(90deg, #E81212 0%, #FCCD05 100%);
+  opacity: 1;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.main .product-list__category_current span {
+  display: inline-block;
+  z-index: 10;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.main .product-list__category_current path {
+  fill: #fff;
+}
+.main .category-icon {
+  z-index: 10;
+  margin-right: 10px;
+  pointer-events: none;
+}
+.main .category__name {
+  pointer-events: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.main-product-list__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.main-product-list__article {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.main-product-list__title {
+  text-align: center;
+}
+.main-product-list__title::after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.main-product-list__paragraph {
+  text-align: center;
+}
+
 .main__service {
   margin-bottom: 100px;
 }
@@ -2127,6 +2273,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px;
   line-height: 150%;
   color: #443E3E;
+  text-transform: uppercase;
 }
 .meet-caution__paragraph {
   color: #443E3E;
