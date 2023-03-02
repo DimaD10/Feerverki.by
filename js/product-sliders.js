@@ -12,13 +12,15 @@ for (let i = 0; i < productPaginations.length; i++) {
   prevEl.classList.add(`product-preview__button-prev_${i}`);
   nextEl.classList.add(`product-preview__button-next_${i}`);
 }
-
+const obj = {};
 for (let i = 0; i < productSliders.length; i++) {
   const el = productSliders[i];
 
   el.classList.add(`product-preview__slider_${i}`);
 
-  var productSlide = new Swiper('.product-preview__slider_' + i, {
+  const item = "item_" + 1;
+/*
+  let sliderCard = new Swiper('.product-preview__slider_' + i, {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 0,
@@ -34,5 +36,23 @@ for (let i = 0; i < productSliders.length; i++) {
       nextEl: `.product-preview__button-next_${i}`,
       prevEl: `.product-preview__button-prev_${i}`,
     },
-  });
+  });*/
 }
+
+let sliderCard = new Swiper('.product-preview__slider_', {
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 0,
+
+  // If we need pagination
+  pagination: {
+    el: `.product-preview__pagination_`,
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: `.product-preview__button-next_`,
+    prevEl: `.product-preview__button-prev_`,
+  },
+});

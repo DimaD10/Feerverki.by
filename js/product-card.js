@@ -54,5 +54,12 @@ cards.forEach((el) => {
     el.addEventListener('mouseout', (e) => {
         el.style.zIndex = 1;
     })
+/*
+    document.addEventListener("click", (e) => {
+        console.log(e.target);
+        if (e.target.classList.contains('product-preview__button-prev') || e.target.classList.contains('product-preview__button-next')) {
+            e.target.closest(".product-card").style.zIndex = 100;
+        }
+    })*/
 })
 
