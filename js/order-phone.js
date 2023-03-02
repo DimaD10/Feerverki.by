@@ -4,6 +4,9 @@ document.addEventListener('click', (e) => {
     if (e.target.dataset.action === "order-phone") {
         orderPhone.classList.add('_active');
         body.style.overflow = `hidden`;
+    } else if (e.target.dataset.action === "order-phone-l") {
+        orderPhone.classList.add('_active');
+        body.style.overflow = `hidden`;
     } else if (e.target.dataset.action === "close-order") {
         orderPhone.classList.remove('_active');
         body.style.overflow = `auto`;            

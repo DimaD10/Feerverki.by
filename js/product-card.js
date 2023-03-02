@@ -30,6 +30,10 @@ document.addEventListener('click', (e) => {
             }
         }
     }
+
+    if (e.target.dataset.action === "add-to-favorite") {
+        e.target.classList.toggle('_favorite');
+    }
 });
 
 const cards = document.querySelectorAll('.product-card');
@@ -40,4 +44,15 @@ cards.forEach((el) => {
         
         btn.innerHTML = `<span>Подробная информация</span>`;
     }
+
+    el.addEventListener('mouseover', (e) => {
+        el.style.zIndex = 100;
+    })
+    el.addEventListener('click', (e) => {
+        el.style.zIndex = 100;
+    })
+    el.addEventListener('mouseout', (e) => {
+        el.style.zIndex = 1;
+    })
 })
+
