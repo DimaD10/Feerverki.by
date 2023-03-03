@@ -39,20 +39,9 @@ for (let i = 0; i < productSliders.length; i++) {
   });*/
 }
 
-let sliderCard = new Swiper('.product-preview__slider_', {
-  loop: true,
-  slidesPerView: 'auto',
-  spaceBetween: 0,
-
-  // If we need pagination
-  pagination: {
-    el: `.product-preview__pagination_`,
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: `.product-preview__button-next_`,
-    prevEl: `.product-preview__button-prev_`,
-  },
+$('.product-preview__slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
 });
