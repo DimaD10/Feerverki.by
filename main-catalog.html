@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main-catalog.css">
     <link rel="icon" href="./img/logo.svg">
 </head>
 
@@ -894,85 +895,22 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__fisrt-screen fisrt-screen">
-                <div class="fisrt-screen__slider">
-                    <div class="slider__container">
-                        <div class="slider-navigation"  data-aos="fade-down" data-aos-duration="1200">
-                            <div class="slider-navigation__prev"></div>
-    
-                            <div class="slider-navigation__pagination"></div>
-    
-                            <div class="slider-navigation__next"></div>                  
-                        </div>
-                    </div>
-                    
-                    <div class="swiper-wrapper">
-                        <div class="fisrt-screen__slide swiper-slide">
-                            <div class="fisrt-screen__wallpaper">
-                                <img src="./img/slider/walpapper-slide1.png" alt="Салюты" data-aos="rm-opacity" data-aos-duration="1600">
-                            </div>
-
-                            <div class="slider__container">
-                                <div class="slider-article">
-                                    <h1 class="slider-article__title" data-aos="fade-up" data-aos-duration="1600">
-                                        <span>пиротехника</span> в могилёве
-                                    </h1>
-                                    <p class="slider-article__paragraph" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">
-                                        Салюты и фейерверки, петарды и хлопушки
-                                    </p>
-                                    <a href="#" class="slider-article__button button-filled" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">
-                                        <span>Перейти в каталог</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="fisrt-screen__slide swiper-slide">
-                            <div class="fisrt-screen__wallpaper">
-                                <img src="./img/slider/walpapper-slide2.png" alt="Салюты" data-aos="rm-opacity" data-aos-duration="1600">
-                            </div>
-
-                            <div class="slider__container">
-                                <div class="slider-article">
-                                    <h1 class="slider-article__title" data-aos="fade-up" data-aos-duration="1600">
-                                        <span>пиротехника</span> в могилёве
-                                    </h1>
-                                    <p class="slider-article__paragraph" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">
-                                        Салюты и фейерверки, петарды и хлопушки
-                                    </p>
-                                    <a href="#" class="slider-article__button button-filled" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">
-                                        <span>Перейти в каталог</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="fisrt-screen__slide swiper-slide">
-                            <div class="fisrt-screen__wallpaper">
-                                <img src="./img/slider/walpapper-slide1.png" alt="Салюты" data-aos="rm-opacity" data-aos-duration="1600">
-                            </div>
-
-                            <div class="slider__container">
-                                <div class="slider-article">
-                                    <h1 class="slider-article__title" data-aos="fade-up" data-aos-duration="1600">
-                                        <span>пиротехника</span> в могилёве
-                                    </h1>
-                                    <p class="slider-article__paragraph" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">
-                                        Салюты и фейерверки, петарды и хлопушки
-                                    </p>
-                                    <a href="#" class="slider-article__button button-filled" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">
-                                        <span>Перейти в каталог</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="main__roadmap roadmap">
+                <div class="roadmap__container">
+                    <span class="roadmap-line">
+                        <a href="index.html" class="roadmap__page">Главная</a>
+                        <span>/</span>
+                        <span class="roadmap__current-page">Каталог</span>
+                    </span>
                 </div>
-            </section>
+            </div>
 
-            <section class="main__main-categoryes main-categoryes">
-                <div class="main-categoryes__container">
-                    <div class="main-categoryes__list">
+            <section class="main__catalog-categoryes catalog-categoryes">
+                <div class="catalog-categoryes__container">
+                    <div class="catalog-categoryes__article article">
+                        <h2 class="article__title catalog-categoryes__title">Категории</h2>
+                    </div>
+                    <div class="catalog-categoryes__list">
                         <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
                             <div class="category-card__wallpaper">
                                 <img src="./img/slider/walpapper-slide2.png" alt="Салюты">
@@ -980,7 +918,6 @@
 
                             <div class="category-card__article">
                                 <h3 class="category-card__title">Салюты</h3>
-                                <p class="category-card__descr">Описание категории</p>
                             </div>
 
                             <div class="category-card__frame">
@@ -992,12 +929,27 @@
 
                         <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
                             <div class="category-card__wallpaper">
-                                <img src="./img/category-card/card2.png" alt="Фонтаны">
+                                <img src="./img/category-card/card-full2.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Фейерверки</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card2.png" alt="Салюты">
                             </div>
 
                             <div class="category-card__article">
                                 <h3 class="category-card__title">Фонтаны</h3>
-                                <p class="category-card__descr">Описание категории</p>
                             </div>
 
                             <div class="category-card__frame">
@@ -1009,12 +961,11 @@
 
                         <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
                             <div class="category-card__wallpaper">
-                                <img src="./img/category-card/card3.png" alt="Цветные дымы">
+                                <img src="./img/category-card/card3.png" alt="Салюты">
                             </div>
 
                             <div class="category-card__article">
-                                <h3 class="category-card__title">Цветные дымы</h3>
-                                <p class="category-card__descr">Описание категории</p>
+                                <h3 class="category-card__title">Цветной дым (фаеры)</h3>
                             </div>
 
                             <div class="category-card__frame">
@@ -1026,12 +977,11 @@
 
                         <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
                             <div class="category-card__wallpaper">
-                                <img src="./img/category-card/card4.png" alt="Фонтаны">
+                                <img src="./img/category-card/card-full5.png" alt="Салюты">
                             </div>
 
                             <div class="category-card__article">
-                                <h3 class="category-card__title">Хлопушки</h3>
-                                <p class="category-card__descr">Описание категории</p>
+                                <h3 class="category-card__title">Пиротехнические ракеты</h3>
                             </div>
 
                             <div class="category-card__frame">
@@ -1043,12 +993,11 @@
 
                         <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
                             <div class="category-card__wallpaper">
-                                <img src="./img/category-card/card5.png" alt="Петарды">
+                                <img src="./img/category-card/card-full6.png" alt="Салюты">
                             </div>
 
                             <div class="category-card__article">
-                                <h3 class="category-card__title">Петарды</h3>
-                                <p class="category-card__descr">Описание категории</p>
+                                <h3 class="category-card__title">Римские свечи</h3>
                             </div>
 
                             <div class="category-card__frame">
@@ -1060,12 +1009,155 @@
 
                         <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
                             <div class="category-card__wallpaper">
-                                <img src="./img/category-card/card6.png" alt="Бенгальские огни">
+                                <img src="./img/category-card/card6.png" alt="Салюты">
                             </div>
 
                             <div class="category-card__article">
                                 <h3 class="category-card__title">Бенгальские огни</h3>
-                                <p class="category-card__descr">Описание категории</p>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card5.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Петарды</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card4.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Хлопушки (конфетти)</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card-full10.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Свечи для торта</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card-full11.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Фестивальные шары</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card-full12.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Профессиональная пиротехника</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card-full13.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Сценическая пиротехника</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card-full14.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Небесные фонарики</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card-full15.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Готовые наборы</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/category-card/card-full16.png" alt="Салюты">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Новинки</h3>
                             </div>
 
                             <div class="category-card__frame">
@@ -1078,9 +1170,9 @@
                 </div>
             </section>
 
-            <section class="main__main-product-list main-product-list">
-                <div class="main-product-list__container">
-                    <div class="main-product-list__article article">
+            <section class="main__product-list product-list">
+                <div class="product-list__container">
+                    <div class="product-list__article article">
                         <h2 class="article__title main-product-list__title" data-aos="fade-up" data-aos-duration="1200">Только качественная пиротехника</h2>
                         <p class="article__paragraph main-product-list__paragraph" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">Лучшие салюты и фейерверки с доставкой по всей Беларуси</p>
                     </div>
@@ -2146,433 +2238,8 @@
                             </div>
                         </div>
                         <div class="button-wrapper" data-aos="fade-up" data-aos-duration="1100">
-                            <a href="./main-catalog.html" class="product-list__button stroke-button">Перейти в каталог</a>
+                            <a href="#" class="product-list__button stroke-button">Перейти в каталог</a>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__service service">
-                <div class="service__container">
-                    <div class="service__article article" data-aos="fade-right" data-aos-duration="800">
-                        <h2 class="article__title service__title">
-                            С нами ваш праздник <br> заиграет новыми красками!
-                        </h2>
-                    </div>
-                    <div class="service-list">
-                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
-                            <div class="service-card__icon-box">
-                                <div class="service-card__icon">
-                                    <img src="./img/service-card/icon1.svg" alt="Пиротехника">
-                                </div>
-                            </div>
-                            <div class="service-card__article">
-                                <h3 class="service-card__name">Пиротехника на любой вкус</h3>
-                                <p class="service-card__paragraph">Салюты, петарды, фонтаны, римские свечи, бенгальские огни и многое другое. Мы расширяем наш ассортимент, чтобы привнести праздник в каждый дом!</p>
-                            </div>
-                        </div>
-
-                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
-                            <div class="service-card__icon-box">
-                                <div class="service-card__icon">
-                                    <img src="./img/service-card/icon2.svg" alt="консультанты">
-                                </div>
-                            </div>
-                            <div class="service-card__article">
-                                <h3 class="service-card__name">Профессиональные консультанты</h3>
-                                <p class="service-card__paragraph">Поможем подобрать фейерверк на любой вкус и бюджет, учитывая все пожелания и капризы покупателя</p>
-                            </div>
-                        </div>
-
-                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
-                            <div class="service-card__icon-box">
-                                <div class="service-card__icon">
-                                    <img src="./img/service-card/icon3.svg" alt="опыт">
-                                </div>
-                            </div>
-                            <div class="service-card__article">
-                                <h3 class="service-card__name">10-летний опыт</h3>
-                                <p class="service-card__paragraph">Большой опыт в продаже фейерверков и салютов позволяет нам грамотно оценивать наиболее популярные эффекты и разрабатывать совершенно новые салютные установки</p>
-                            </div>
-                        </div>
-
-                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
-                            <div class="service-card__icon-box">
-                                <div class="service-card__icon">
-                                    <img src="./img/service-card/icon4.svg" alt="цены">
-                                </div>
-                            </div>
-                            <div class="service-card__article">
-                                <h3 class="service-card__name">Лучшие цены</h3>
-                                <p class="service-card__paragraph">Покупая у нас, вы можете быть уверены не только в качестве, но и в цене. Мы грамотно оптимизируем расходы и делаем праздник доступным благодаря гибкой системе скидок</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
-                            <div class="service-card__icon-box">
-                                <div class="service-card__icon">
-                                    <img src="./img/service-card/icon5.svg" alt="Доставка">
-                                </div>
-                            </div>
-                            <div class="service-card__article">
-                                <h3 class="service-card__name">Доставка по всей Беларуси</h3>
-                                <p class="service-card__paragraph">Быстро и безопасно доставим ваш фейерверк в любую точку страны — Минск, Могилёв, Гомель, Витебск, Чаусы, Горки и др.</p>
-                            </div>
-                        </div>
-
-                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
-                            <div class="service-card__icon-box">
-                                <div class="service-card__icon">
-                                    <img src="./img/service-card/icon6.svg" alt="качество">
-                                </div>
-                            </div>
-                            <div class="service-card__article">
-                                <h3 class="service-card__name">Проверка качества</h3>
-                                <p class="service-card__paragraph">Все наши изделия прошли проверку качества. В наличии у каждого товара — все необходимые сертификаты и инструкции по применению ПИ на русском языке</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__meet meet">
-                <div class="meet__container">
-                    <div class="meet__preview"  data-aos="rm-opacity" data-aos-duration="1600">
-                        <img src="./img/section-wallpapers/meet-wallpaper.png" alt="Салюты">
-                    </div>
-                    <div class="meet-content">
-                        <div class="meet-content__article article">
-                            <h2 class="article__title meet__title" data-aos="fade-up" data-aos-duration="1000">Давайте познакомимся!</h2>
-                            <p class="article__paragraph meet-content__paragraph" data-aos="fade-left" data-aos-duration="1000">В нашей сети магазинов «Энергия праздников» мы предлагаем купить фейерверки и салют в Могилёве по самой доступной цене! День рождения, свадьба, юбилей или корпоратив — мы идеально дополним любое торжество.</p>
-                            <p class="article__paragraph meet-content__paragraph" data-aos="fade-left" data-aos-duration="1000">Мы работаем специально для того, чтобы каждый мог насладиться разноцветными и красочными вспышками ночного неба. Вас ждёт широкий выбор самых разнокалиберных салютных установок со множеством вариаций залпов и эффектов. Насладитесь необыкновенным представлением, сделайте важный для вас день незабываемым!</p>
-                            <p class="article__paragraph meet-content__paragraph" data-aos="fade-left" data-aos-duration="1000">«Энергия праздника» является официальным представителем «MAXSEM» на территории Республики Беларусь. «MAXSEM» — это крупнейшая европейская компания, которая занимается оптовыми поставками пиротехнических товаров в Еврозону и страны СНГ.</p>
-                        </div>
-                        <div class="meet-caution" data-aos="rm-opacity" data-aos-duration="1600">
-                            <h3 class="meet-caution__title">Внимание!</h3>
-                            <p class="meet-caution__paragraph">
-                                Каждое пиротехническое изделие, вне зависимости от класса, является огнеопасным! Внимательно изучите инструкцию перед применением. Не передавайте изделия несовершеннолетним. Приобретайте фейерверки и петарды ТОЛЬКО в специально предназначенных для этих целей объектах. Не пользуйтесь почтовой доставкой недобросовестных продавцов.
-                            </p>
-                            <ol class="meet-caution__list">
-                                <li>Приобретая товар, убедитесь на месте, что он не самодельный</li>
-                                <li>Особо внимательно отнеситесь к наличию необходимых сертификатов и инструкций по применению ПИ на русском языке</li>
-                                <li>Обезопасьте себя от травм при использовании, ознакомившись с инструкцией по применению. Также обратите внимание на ограничения!</li>
-                                <li>При несчастном случае во время использования ПИ немедленно свяжитесь с МЧС</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__reviews reviews">
-                <div class="reviews__container">
-                    <div class="reviews__article article" data-aos="fade-right" data-aos-duration="800">
-                        <h2 class="article__title reviews__title">Отзывы о нашей работе</h2>
-                    </div>
-
-                    <div class="reviews__main">
-                        <div class="reviews-aside">
-                            <div class="reviews-aside__box yandex-rate" data-aos="rm-opacity" data-aos-duration="1400">
-                                <div class="reviews-aside__icon">
-                                    <img src="./img/logos/yandex-logo.png" alt="logo">
-                                </div>
-                                <div class="reviews-aside__article">
-                                    <div class="reviews-aside__counter">
-                                        <span>244</span> отзыва
-                                    </div>
-                                    <p class="reviews-aside__paragraph">
-                                        о наших магазинах
-                                    </p>
-
-                                    <div class="aside-rate">
-                                        <div class="aside-rate__rate">
-                                            <div class="aside-rate__body">
-                                                <div class="aside-rate__active"></div>
-
-                                                <div class="aside-rate__items">
-                                                    <input type="radio" class="aside-rate__input" value="1" name="rating">
-                                                    <input type="radio" class="aside-rate__input" value="2" name="rating">
-                                                    <input type="radio" class="aside-rate__input" value="3" name="rating">
-                                                    <input type="radio" class="aside-rate__input" value="4" name="rating">
-                                                    <input type="radio" class="aside-rate__input" value="5" name="rating">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="aside-rate__counter">
-                                            <span class="counter-rate">4.4</span>/<span class="counter-total">5.0</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="reviews-aside__box google-rate" data-aos="rm-opacity" data-aos-duration="1400">
-                                <div class="reviews-aside__icon">
-                                    <img src="./img/logos/google-logo.png" alt="logo">
-                                </div>
-                                <div class="reviews-aside__article">
-                                    <div class="reviews-aside__counter">
-                                        <span>356</span> отзыва
-                                    </div>
-                                    <p class="reviews-aside__paragraph">
-                                        о наших магазинах
-                                    </p>
-
-                                    <div class="aside-rate">
-                                        <div class="aside-rate__rate">
-                                            <div class="aside-rate__body">
-                                                <div class="aside-rate__active"></div>
-
-                                                <div class="aside-rate__items">
-                                                    <input type="radio" class="aside-rate__input" value="1" name="rating">
-                                                    <input type="radio" class="aside-rate__input" value="2" name="rating">
-                                                    <input type="radio" class="aside-rate__input" value="3" name="rating">
-                                                    <input type="radio" class="aside-rate__input" value="4" name="rating">
-                                                    <input type="radio" class="aside-rate__input" value="5" name="rating">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="aside-rate__counter">
-                                            <span class="counter-rate">5.0</span>/<span class="counter-total">5.0</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-text">
-                            <div class="reviews-text__review review">
-                                <div class="review__wrapper" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
-                                    <div class="review__head">
-                                        <h4 class="review__author">Илья Якушев</h4>
-                                        <div class="user-rating">
-                                            <div class="user-rating__rate">
-                                                <div class="user-rating__body">
-                                                    <div class="user-rating__active"></div>
-
-                                                    <div class="user-rating__items">
-                                                        <input type="radio" class="user-rating__input" value="1" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="2" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="3" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="4" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="5" name="rating">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="user-rating__counter">
-                                                <span class="counter-rate">4.0</span>/<span class="counter-total">5.0</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review__date">17.08.2021</div>
-                                    <p class="review__text">Отличный магазин,цены очень порадовали,хорошие отзывчивые продавцы,все очень хорошо объяснили и показали,хороший выбор,всё очень понравилось,огромное спасибо.</p>
-                                </div>
-                            </div>
-
-                            <div class="reviews-text__review review">
-                                <div class="review__wrapper" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">
-                                    <div class="review__head">
-                                        <h4 class="review__author">Илья Якушев</h4>
-                                        <div class="user-rating">
-                                            <div class="user-rating__rate">
-                                                <div class="user-rating__body">
-                                                    <div class="user-rating__active"></div>
-
-                                                    <div class="user-rating__items">
-                                                        <input type="radio" class="user-rating__input" value="1" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="2" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="3" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="4" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="5" name="rating">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="user-rating__counter">
-                                                <span class="counter-rate">4.0</span>/<span class="counter-total">5.0</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review__date">17.08.2021</div>
-                                    <p class="review__text">Отличный магазин,цены очень порадовали,хорошие отзывчивые продавцы,все очень хорошо объяснили и показали,хороший выбор,всё очень понравилось,огромное спасибо.</p>
-                                </div>
-                            </div>
-
-                            <div class="reviews-text__review review">
-                                <div class="review__wrapper" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-                                    <div class="review__head">
-                                        <h4 class="review__author">Илья Якушев</h4>
-                                        <div class="user-rating">
-                                            <div class="user-rating__rate">
-                                                <div class="user-rating__body">
-                                                    <div class="user-rating__active"></div>
-
-                                                    <div class="user-rating__items">
-                                                        <input type="radio" class="user-rating__input" value="1" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="2" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="3" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="4" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="5" name="rating">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="user-rating__counter">
-                                                <span class="counter-rate">4.0</span>/<span class="counter-total">5.0</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review__date">17.08.2021</div>
-                                    <p class="review__text">Отличный магазин,цены очень порадовали,хорошие отзывчивые продавцы,все очень хорошо объяснили и показали,хороший выбор,всё очень понравилось,огромное спасибо.</p>
-                                </div>
-                            </div>
-
-                            <div class="reviews-text__review review">
-                                <div class="review__wrapper" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="250">
-                                    <div class="review__head">
-                                        <h4 class="review__author">Илья Якушев</h4>
-                                        <div class="user-rating">
-                                            <div class="user-rating__rate">
-                                                <div class="user-rating__body">
-                                                    <div class="user-rating__active"></div>
-
-                                                    <div class="user-rating__items">
-                                                        <input type="radio" class="user-rating__input" value="1" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="2" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="3" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="4" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="5" name="rating">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="user-rating__counter">
-                                                <span class="counter-rate">4.0</span>/<span class="counter-total">5.0</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review__date">17.08.2021</div>
-                                    <p class="review__text">Отличный магазин,цены очень порадовали,хорошие отзывчивые продавцы,все очень хорошо объяснили и показали,хороший выбор,всё очень понравилось,огромное спасибо.</p>
-                                </div>
-                            </div>
-
-                            <div class="reviews-text__review review">
-                                <div class="review__wrapper" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
-                                    <div class="review__head">
-                                        <h4 class="review__author">Илья Якушев</h4>
-                                        <div class="user-rating">
-                                            <div class="user-rating__rate">
-                                                <div class="user-rating__body">
-                                                    <div class="user-rating__active"></div>
-
-                                                    <div class="user-rating__items">
-                                                        <input type="radio" class="user-rating__input" value="1" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="2" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="3" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="4" name="rating">
-                                                        <input type="radio" class="user-rating__input" value="5" name="rating">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="user-rating__counter">
-                                                <span class="counter-rate">4.0</span>/<span class="counter-total">5.0</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review__date">17.08.2021</div>
-                                    <p class="review__text">Отличный магазин,цены очень порадовали,хорошие отзывчивые продавцы,все очень хорошо объяснили и показали,хороший выбор,всё очень понравилось,огромное спасибо.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="button-wrapper" data-aos="fade-up" data-aos-duration="1100">
-                        <a href="#" class="reviews__button stroke-button">Смотреть все отзывы</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__shares shares">
-                <div class="shares__container">
-                    <div class="shares__article article" data-aos="fade-right" data-aos-duration="800">
-                        <div class="article__title shares__title">Наши акции</div>
-                    </div>
-                    <div class="shares-list">
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card1.png" alt="Акция">
-                            </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
-                                    <span>Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card2.png" alt="Акция">
-                            </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
-                                    <span>Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card3.png" alt="Акция">
-                            </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
-                                    <span>Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button-wrapper" data-aos="fade-up" data-aos-duration="1100">
-                        <a href="#" class="shares__button stroke-button">Все акции</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__news news">
-                <div class="news__container">
-                    <div class="news__article article" data-aos="fade-right" data-aos-duration="800">
-                        <h2 class="article__title news__title">Статьи и новости</h2>
-                    </div>
-                    <div class="news__bottom">
-                        <div class="news-article" data-aos="fade-up" data-aos-duration="800">
-                            <div class="news-article__wallpaper">
-                                <img src="./img/section-wallpapers/article-bg.png" alt="Чем салют отличается от фейерверка: разные эффекты и история понятий">
-                            </div>
-                            <div class="news-article__article">
-                                <span class="news-article__date" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">25.01.2023</span>
-                                <a href="#" class="news-article__title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Чем салют отличается от фейерверка: разные эффекты и история понятий</a>
-                                <a href="#" class="news-article__button button-filled">
-                                    <span>Читать</span>
-                                </a>
-                            </div>
-                        </div>    
-                        <div class="news-list">
-                            <div class="new-info">
-                                <a href="#" class="new-info__wrapper" data-aos="fade-left" data-aos-duration="1000">
-                                    <span class="news-article__date">25.01.2023</span>
-                                    <h3 class="news-article__title">Когда изобрели фейерверк: история возникновения праздничного шоу</h3>    
-                                </a>
-                            </div>
-                            <div class="new-info">
-                                <a href="#" class="new-info__wrapper" data-aos="fade-left" data-aos-duration="1000">
-                                    <span class="news-article__date">25.01.2023</span>
-                                    <h3 class="news-article__title">Свечи для торта</h3>    
-                                </a>
-                            </div>
-                            <div class="new-info">
-                                <a href="#" class="new-info__wrapper" data-aos="fade-left" data-aos-duration="1000">
-                                    <span class="news-article__date">25.01.2023</span>
-                                    <h3 class="news-article__title">Фаер шоу</h3>    
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="button-wrapper" data-aos="fade-up" data-aos-duration="1100">
-                        <a href="#" class="news__button stroke-button">Перейти в блог</a>
                     </div>
                 </div>
             </section>
@@ -2680,69 +2347,6 @@
                                 Текст ответа. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности позволяет оценить значение направлений прогрессивного развития.
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__contacts contacts">
-                <div class="contacts__container">
-                    <div class="contacts__article article" data-aos="fade-right" data-aos-duration="1200">
-                        <h2 class="article__title contacts__title">Контакты</h2>
-                    </div>
-
-                    <div class="contacts__bottom">
-                        <div class="contacts-info" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
-                            <h5 class="contacts-info__subtitle">Информация для заказа</h5>
-                            <p class="contacts-info__paragraph">Заказать товар или получить консультацию можно по следующим контактам для связи:</p>
-                            <div class="haeder-info-connect">
-                                <div class="haeder-info-connect__el">
-                                    <div class="haeder-info-connect__icon">
-                                        <img src="./img/icons/phone-red.svg" alt="phone">
-                                    </div>
-                                    <div class="info-block">
-                                        <a href="tel:+375291442434" class="info-block__number">+375 (29) 144-24-34</a>
-                                        <p class="info-block__text">с 9:00 до 19:00 ежедневно</p>
-                                    </div>
-                                </div>
-                                <div class="haeder-info-connect__el haeder-info-connect__mail">
-                                    <div class="haeder-info-connect__icon">
-                                        <img src="./img/icons/mail-red.svg" alt="mail">
-                                    </div>
-                                    <div class="info-block">
-                                        <a href="mailto:ep.mog@yandex.by" class="info-block__number">ep.mog@yandex.by</a>
-                                    </div>
-                                </div>
-                                <div class="haeder-info-connect__el haeder-info-connect__address">
-                                    <div class="haeder-info-connect__icon">
-                                        <img src="./img/icons/location-red.svg" alt="location">
-                                    </div>
-                                    <div class="info-block">
-                                        <a href="#" class="info-block__address">Адреса магазинов</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="contacts-info__about">
-                                <h5 class="contacts-info__subtitle">Информация для заказа</h5>
-                                <p class="contacts-info__paragraph">ООО «Энергия праздника»</p>
-                                <p class="contacts-info__paragraph">УНП 791185388</p>
-                            </div>
-                        </div>
-
-                        <div class="contacts__map" id="map" data-aos="fade-down" data-aos-duration="1200">
-                            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
-                                var setting = {"height":540,"width":803,"zoom":17,"queryString":"улица Лазаренко 32, Могилёв, Беларусь","place_id":"ChIJr8xPwNxR0EYRNOr4rNM-7q4","satellite":false,"centerCoord":[53.90451432178094,30.320727850000022],"cid":"0xaeee3ed3acf8ea34","lang":"ru","cityUrl":"/belarus/mogilev-43026","cityAnchorText":"Карта [CITY1], Могилёвская область, Беларусь","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"889695"};
-                                var d = document;
-                                var s = d.createElement('script');
-                                s.src = 'https://1map.com/js/script-for-user.js?embed_id=889695';
-                                s.async = true;
-                                s.onload = function (e) {
-                                  window.OneMap.initMap(setting)
-                                };
-                                var to = d.getElementsByTagName('script')[0];
-                                to.parentNode.insertBefore(s, to);
-                              })();</script><a href="https://1map.com/ru/map-embed">1 Map</a></div>                        </div>
                     </div>
                 </div>
             </section>
@@ -2962,7 +2566,6 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/product-category-toggler.js"></script>
-    <script src="./js/rate-rating.js"></script>
     <script src="./js/question.js"></script>
     <script src="./js/product-card.js"></script>
     <script src="./js/product-sliders.js"></script>
