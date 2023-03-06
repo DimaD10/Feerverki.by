@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feerverki</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shares.css">
+    <link rel="icon" href="./img/logo.svg">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-search-overlay">
+                <div class="header-search-overlay__container">
+                    <form class="search-form">
+                        <button class="header-actions__search">
+                            <svg width="30" height="30" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.8731 3.71961H10.8431L10.8398 3.71961C10.5616 3.71961 10.4032 3.71961 10.2664 3.72558C7.01774 3.86742 4.41634 6.46882 4.2745 9.71751C4.26853 9.85429 4.26853 10.0127 4.26853 10.2909L4.26853 10.2941V10.3242L4.26853 10.3274C4.26853 10.6057 4.26853 10.7641 4.2745 10.9009C4.41634 14.1495 7.01774 16.7509 10.2664 16.8928C10.4032 16.8988 10.5617 16.8988 10.84 16.8988H10.8431H10.8731H10.8762C11.1545 16.8988 11.313 16.8988 11.4498 16.8928C14.6985 16.7509 17.2999 14.1495 17.4417 10.9009C17.4477 10.764 17.4477 10.6056 17.4477 10.3272V10.3242V10.2942V10.2911C17.4477 10.0128 17.4477 9.85432 17.4417 9.71751C17.2999 6.46882 14.6985 3.86742 11.4498 3.72558C11.313 3.71961 11.1546 3.71961 10.8764 3.71961L10.8731 3.71961ZM10.314 4.81527C10.4239 4.81047 10.5569 4.81034 10.8581 4.81034C11.1593 4.81034 11.2923 4.81047 11.4022 4.81527C14.0859 4.93244 16.2348 7.08141 16.352 9.76509C16.3568 9.87502 16.357 10.008 16.357 10.3092C16.357 10.6103 16.3568 10.7433 16.352 10.8533C16.2348 13.537 14.0859 15.6859 11.4022 15.8031C11.2923 15.8079 11.1593 15.808 10.8581 15.808C10.5569 15.808 10.4239 15.8079 10.314 15.8031C7.63033 15.6859 5.48136 13.537 5.36419 10.8533C5.35939 10.7433 5.35926 10.6103 5.35926 10.3092C5.35926 10.008 5.35939 9.87502 5.36419 9.76509C5.48136 7.08141 7.63033 4.93244 10.314 4.81527Z" fill="#443E3E" stroke="#443E3E" stroke-width="0.2"/>
+                                <path d="M15.8275 15.5367C15.602 15.3077 15.3596 15.1327 15.147 15.0369C15.041 14.9891 14.9374 14.9587 14.8441 14.9543C14.7508 14.9499 14.6568 14.9714 14.588 15.0412C14.5193 15.1111 14.4981 15.2066 14.5024 15.3014C14.5068 15.3962 14.5367 15.5014 14.5837 15.609C14.6781 15.825 14.8503 16.0713 15.0758 16.3003L19.1565 20.4457C19.382 20.6747 19.6244 20.8496 19.837 20.9455C19.943 20.9933 20.0466 21.0237 20.1399 21.0281C20.2332 21.0325 20.3273 21.011 20.396 20.9412C20.4647 20.8713 20.4859 20.7758 20.4816 20.681C20.4772 20.5862 20.4473 20.481 20.4003 20.3734C20.3059 20.1573 20.1337 19.9111 19.9082 19.6821L15.8275 15.5367Z" fill="#443E3E" stroke="#443E3E" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        
+                        <input type="text" class="header-actions__input" placeholder="Начните печатать...">
+                    </form>
+
+                    <button class="close-overlay" data-action="close-searchbar">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0957 0.0878868C10.336 0.451168 7.85158 1.5 5.59572 3.26953C5.06252 3.68554 3.68557 5.06836 3.26369 5.60742C1.47658 7.86914 0.398458 10.4883 0.0644735 13.3301C-0.0175578 13.998 -0.0175578 15.9902 0.0586141 16.6406C0.357442 19.1602 1.1426 21.2988 2.53127 23.3789C4.36525 26.1152 7.10158 28.2012 10.2129 29.2441C11.0449 29.5195 11.6192 29.666 12.5684 29.8301C13.5821 30.0117 15.7383 30.0527 16.8223 29.9121C20.2149 29.4902 23.1797 28.0371 25.6113 25.6113C28.0723 23.1445 29.5781 20.0215 29.9414 16.6289C30.0293 15.7852 30.0117 13.9629 29.9121 13.125C29.4844 9.69726 27.9082 6.57421 25.3594 4.13086C23.0215 1.88086 20.0801 0.492184 16.8164 0.0820274C15.9903 -0.0175819 13.9102 -0.0175819 13.0957 0.0878868ZM10.7461 9.15234C10.9512 9.21093 11.3028 9.5332 12.9961 11.2148L15 13.207L17.0098 11.2148C19.0899 9.14062 19.166 9.08203 19.6348 9.08203C20.2852 9.08203 20.918 9.71484 20.918 10.3652C20.918 10.834 20.8594 10.9102 18.7852 12.9902L16.793 15L18.7852 17.0098C20.8594 19.0898 20.918 19.166 20.918 19.6348C20.918 20.2852 20.2852 20.918 19.6348 20.918C19.166 20.918 19.0899 20.8594 17.0098 18.7852L15 16.793L12.9961 18.7852C10.9102 20.8594 10.834 20.918 10.3653 20.918C9.71486 20.918 9.08205 20.2852 9.08205 19.6348C9.08205 19.166 9.14065 19.0898 11.2149 17.0039L13.2071 15L11.2149 12.9902C9.14065 10.9102 9.08205 10.834 9.08205 10.3652C9.08205 9.73242 9.709 9.09375 10.336 9.08203C10.4297 9.08203 10.6113 9.11132 10.7461 9.15234Z" fill="#CCCCCC"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="order-phone">
+                <div class="order-phone__wrapper">
+                    <div class="order-phone__header">
+                        <img src="./img/full-logo.svg" class="connection__logo" alt="logo">
+                        
+                        <button class="close-overlay" data-action="close-order">
+                            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0957 0.0878868C10.336 0.451168 7.85158 1.5 5.59572 3.26953C5.06252 3.68554 3.68557 5.06836 3.26369 5.60742C1.47658 7.86914 0.398458 10.4883 0.0644735 13.3301C-0.0175578 13.998 -0.0175578 15.9902 0.0586141 16.6406C0.357442 19.1602 1.1426 21.2988 2.53127 23.3789C4.36525 26.1152 7.10158 28.2012 10.2129 29.2441C11.0449 29.5195 11.6192 29.666 12.5684 29.8301C13.5821 30.0117 15.7383 30.0527 16.8223 29.9121C20.2149 29.4902 23.1797 28.0371 25.6113 25.6113C28.0723 23.1445 29.5781 20.0215 29.9414 16.6289C30.0293 15.7852 30.0117 13.9629 29.9121 13.125C29.4844 9.69726 27.9082 6.57421 25.3594 4.13086C23.0215 1.88086 20.0801 0.492184 16.8164 0.0820274C15.9903 -0.0175819 13.9102 -0.0175819 13.0957 0.0878868ZM10.7461 9.15234C10.9512 9.21093 11.3028 9.5332 12.9961 11.2148L15 13.207L17.0098 11.2148C19.0899 9.14062 19.166 9.08203 19.6348 9.08203C20.2852 9.08203 20.918 9.71484 20.918 10.3652C20.918 10.834 20.8594 10.9102 18.7852 12.9902L16.793 15L18.7852 17.0098C20.8594 19.0898 20.918 19.166 20.918 19.6348C20.918 20.2852 20.2852 20.918 19.6348 20.918C19.166 20.918 19.0899 20.8594 17.0098 18.7852L15 16.793L12.9961 18.7852C10.9102 20.8594 10.834 20.918 10.3653 20.918C9.71486 20.918 9.08205 20.2852 9.08205 19.6348C9.08205 19.166 9.14065 19.0898 11.2149 17.0039L13.2071 15L11.2149 12.9902C9.14065 10.9102 9.08205 10.834 9.08205 10.3652C9.08205 9.73242 9.709 9.09375 10.336 9.08203C10.4297 9.08203 10.6113 9.11132 10.7461 9.15234Z" fill="#CCCCCC"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="haeder-info-connect">
+                        <div class="haeder-info-connect__el">
+                            <div class="haeder-info-connect__icon">
+                                <img src="./img/icons/phone-red.svg" alt="phone">
+                            </div>
+                            <div class="info-block">
+                                <a href="tel:+375291442434" class="info-block__number">+375 (29) 144-24-34</a>
+                                <p class="info-block__text">с 9:00 до 19:00 ежедневно</p>
+                            </div>
+                        </div>
+                        <div class="haeder-info-connect__el">
+                            <div class="haeder-info-connect__icon">
+                                <img src="./img/icons/mail-red.svg" alt="mail">
+                            </div>
+                            <div class="info-block">
+                                <a href="mailto:ep.mog@yandex.by" class="info-block__number">ep.mog@yandex.by</a>
+                            </div>
+                        </div>
+                        <div class="haeder-info-connect__el haeder-info-connect__address">
+                            <div class="haeder-info-connect__icon">
+                                <img src="./img/icons/location-red.svg" alt="location">
+                            </div>
+                            <div class="info-block">
+                                <a href="#" class="info-block__address">Адреса магазинов</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__social-list social-list">
+                        <a href="#" class="social-list__link">
+                            <img src="./img/icons/insta-red.svg" alt="instagram icon">
+                        </a>
+                        <a href="#" class="social-list__link">
+                            <img src="./img/icons/yt-red.svg" alt="youtube icon">
+                        </a>
+                        <a href="#" class="social-list__link">
+                            <img src="./img/icons/vk-red.svg" alt="vkontakte icon">
+                        </a>
+                    </div>
+
+                    <button class="header__button button-filled">
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header-top">
+                <div class="header__container">
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <a href="#" class="header__logo">
+                        <img src="./img/logo.svg" alt="logo" class="logo-little">
+                        <img src="./img/full-logo.svg" alt="logo" class="logo-large">
+                    </a>
+                    <div class="header__connection connection">
+                        <img src="./img/icons/phone.svg" alt="phone" data-action="order-phone">
+
+                        <a href="tel:+375291442434" class="connection__number">
+                            <span>
+                                +375 (29) 144-24-34
+                            </span>
+                        </a>
+                        <p class="connection__text">с 9:00 до 19:00 ежедневно</p>
+                    </div>
+                    <div class="header__social-list social-list">
+                        <a href="#" class="social-list__link">
+                            <img src="./img/icons/insta-red.svg" alt="instagram icon">
+                        </a>
+                        <a href="#" class="social-list__link">
+                            <img src="./img/icons/yt-red.svg" alt="youtube icon">
+                        </a>
+                        <a href="#" class="social-list__link">
+                            <img src="./img/icons/vk-red.svg" alt="vkontakte icon">
+                        </a>
+                    </div>
+                    <div class="header__actions header-actions">
+                        <button class="header-actions__search" data-action="search">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.8731 3.71961H10.8431L10.8398 3.71961C10.5616 3.71961 10.4032 3.71961 10.2664 3.72558C7.01774 3.86742 4.41634 6.46882 4.2745 9.71751C4.26853 9.85429 4.26853 10.0127 4.26853 10.2909L4.26853 10.2941V10.3242L4.26853 10.3274C4.26853 10.6057 4.26853 10.7641 4.2745 10.9009C4.41634 14.1495 7.01774 16.7509 10.2664 16.8928C10.4032 16.8988 10.5617 16.8988 10.84 16.8988H10.8431H10.8731H10.8762C11.1545 16.8988 11.313 16.8988 11.4498 16.8928C14.6985 16.7509 17.2999 14.1495 17.4417 10.9009C17.4477 10.764 17.4477 10.6056 17.4477 10.3272V10.3242V10.2942V10.2911C17.4477 10.0128 17.4477 9.85432 17.4417 9.71751C17.2999 6.46882 14.6985 3.86742 11.4498 3.72558C11.313 3.71961 11.1546 3.71961 10.8764 3.71961L10.8731 3.71961ZM10.314 4.81527C10.4239 4.81047 10.5569 4.81034 10.8581 4.81034C11.1593 4.81034 11.2923 4.81047 11.4022 4.81527C14.0859 4.93244 16.2348 7.08141 16.352 9.76509C16.3568 9.87502 16.357 10.008 16.357 10.3092C16.357 10.6103 16.3568 10.7433 16.352 10.8533C16.2348 13.537 14.0859 15.6859 11.4022 15.8031C11.2923 15.8079 11.1593 15.808 10.8581 15.808C10.5569 15.808 10.4239 15.8079 10.314 15.8031C7.63033 15.6859 5.48136 13.537 5.36419 10.8533C5.35939 10.7433 5.35926 10.6103 5.35926 10.3092C5.35926 10.008 5.35939 9.87502 5.36419 9.76509C5.48136 7.08141 7.63033 4.93244 10.314 4.81527Z" fill="#443E3E" stroke="#443E3E" stroke-width="0.2"/>
+                                <path d="M15.8275 15.5367C15.602 15.3077 15.3596 15.1327 15.147 15.0369C15.041 14.9891 14.9374 14.9587 14.8441 14.9543C14.7508 14.9499 14.6568 14.9714 14.588 15.0412C14.5193 15.1111 14.4981 15.2066 14.5024 15.3014C14.5068 15.3962 14.5367 15.5014 14.5837 15.609C14.6781 15.825 14.8503 16.0713 15.0758 16.3003L19.1565 20.4457C19.382 20.6747 19.6244 20.8496 19.837 20.9455C19.943 20.9933 20.0466 21.0237 20.1399 21.0281C20.2332 21.0325 20.3273 21.011 20.396 20.9412C20.4647 20.8713 20.4859 20.7758 20.4816 20.681C20.4772 20.5862 20.4473 20.481 20.4003 20.3734C20.3059 20.1573 20.1337 19.9111 19.9082 19.6821L15.8275 15.5367Z" fill="#443E3E" stroke="#443E3E" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+    
+                        <div class="header-actions__actions-wrapper">
+                            <div class="header-actions__action" data-status="favorite">
+                                <a href="#" class="nav-link">
+                                    <img src="./img/icons/fav-icon.svg" class="header-actions__icon" alt="favorite">
+
+                                    <img src="./img/icons/fav-icon-red.svg" class="icon-overlay" alt="favorite">
+                                </a>
+                                <div class="action-status action-status_empty">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                            <div class="header-actions__action cart-parrent ">
+                                <button class="nav-link" data-status="cart">
+                                    <img src="./img/icons/cart-icon.svg" class="header-actions__icon" alt="cart">
+
+                                    <img src="./img/icons/cart-icon-red.svg" class="icon-overlay" alt="cart">                                                     
+                                </button>
+                                <div class="action-status">
+                                    <span>1</span>
+                                </div>
+
+                                <div class="triangle"></div>
+                                <div class="triangle-second"></div>
+                            </div>
+
+                            <div class="header-actions-popup popup-added-to-cart">
+                                <div class="header-actions-popup__wrapper">
+                                    <h4 class="header-actions-popup__title">
+                                        Товар добавлен в корзину!
+                                    </h4>
+                                    <div class="order-on-one-click__product product-order">
+                                        <div class="product-order__wrapper">
+                                            <div class="product-order__order">
+                                                <a href="#" class="product-order__preview">
+                                                    <img src="./img/product-list/product1.png" alt="Цветной дым голубой Sky Blue MA0509">
+                                                </a>
+                                                <div class="product-order__offer">
+                                                    <a href="#" class="product-order__title">Цветной дым голубой Sky Blue MA0509</a>
+                                                    <span class="product-order__counter">
+                                                        <span class="product-order__count">1</span> x <span class="product-order__price">12.00 BYN</span>
+                                                    </span>
+                                                </div>
+                                                <button class="header-actions-popup__close" data-action="remove-product">
+                                                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.0957 0.0878868C10.336 0.451168 7.85158 1.5 5.59572 3.26953C5.06252 3.68554 3.68557 5.06836 3.26369 5.60742C1.47658 7.86914 0.398458 10.4883 0.0644735 13.3301C-0.0175578 13.998 -0.0175578 15.9902 0.0586141 16.6406C0.357442 19.1602 1.1426 21.2988 2.53127 23.3789C4.36525 26.1152 7.10158 28.2012 10.2129 29.2441C11.0449 29.5195 11.6192 29.666 12.5684 29.8301C13.5821 30.0117 15.7383 30.0527 16.8223 29.9121C20.2149 29.4902 23.1797 28.0371 25.6113 25.6113C28.0723 23.1445 29.5781 20.0215 29.9414 16.6289C30.0293 15.7852 30.0117 13.9629 29.9121 13.125C29.4844 9.69726 27.9082 6.57421 25.3594 4.13086C23.0215 1.88086 20.0801 0.492184 16.8164 0.0820274C15.9903 -0.0175819 13.9102 -0.0175819 13.0957 0.0878868ZM10.7461 9.15234C10.9512 9.21093 11.3028 9.5332 12.9961 11.2148L15 13.207L17.0098 11.2148C19.0899 9.14062 19.166 9.08203 19.6348 9.08203C20.2852 9.08203 20.918 9.71484 20.918 10.3652C20.918 10.834 20.8594 10.9102 18.7852 12.9902L16.793 15L18.7852 17.0098C20.8594 19.0898 20.918 19.166 20.918 19.6348C20.918 20.2852 20.2852 20.918 19.6348 20.918C19.166 20.918 19.0899 20.8594 17.0098 18.7852L15 16.793L12.9961 18.7852C10.9102 20.8594 10.834 20.918 10.3653 20.918C9.71486 20.918 9.08205 20.2852 9.08205 19.6348C9.08205 19.166 9.14065 19.0898 11.2149 17.0039L13.2071 15L11.2149 12.9902C9.14065 10.9102 9.08205 10.834 9.08205 10.3652C9.08205 9.73242 9.709 9.09375 10.336 9.08203C10.4297 9.08203 10.6113 9.11132 10.7461 9.15234Z" fill="#CCCCCC"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-actions-popup__buttons">
+                                        <div class="button-bottom-wrapper">
+                                            <div class="button-wrapper">
+                                                <button class="card-actions__button stroke-button" data-open="open-full-cart">В корзину</button>
+                                            </div>
+                                            <button class="product-card__button button-filled" data-action="order-to-one-click">
+                                                <span>Оформить заказ</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="header-actions-popup popup-cart">
+                                <div class="header-actions-popup__wrapper">
+                                    <h4 class="header-actions-popup__title">
+                                        Корзина
+                                    </h4>
+                                    <div class="order-on-one-click__product product-order">
+                                        <div class="product-order__wrapper">
+                                            <div class="product-order__order">
+                                                <a href="#" class="product-order__preview">
+                                                    <img src="./img/product-list/product1.png" alt="Цветной дым голубой Sky Blue MA0509">
+                                                </a>
+                                                <div class="product-order__offer">
+                                                    <a href="#" class="product-order__title">Цветной дым голубой Sky Blue MA0509</a>
+                                                    <span class="product-order__counter">
+                                                        <span class="product-order__count">1</span> x <span class="product-order__price">12.00 BYN</span>
+                                                    </span>
+                                                </div>
+                                                <button class="header-actions-popup__close" data-action="remove-product">
+                                                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.0957 0.0878868C10.336 0.451168 7.85158 1.5 5.59572 3.26953C5.06252 3.68554 3.68557 5.06836 3.26369 5.60742C1.47658 7.86914 0.398458 10.4883 0.0644735 13.3301C-0.0175578 13.998 -0.0175578 15.9902 0.0586141 16.6406C0.357442 19.1602 1.1426 21.2988 2.53127 23.3789C4.36525 26.1152 7.10158 28.2012 10.2129 29.2441C11.0449 29.5195 11.6192 29.666 12.5684 29.8301C13.5821 30.0117 15.7383 30.0527 16.8223 29.9121C20.2149 29.4902 23.1797 28.0371 25.6113 25.6113C28.0723 23.1445 29.5781 20.0215 29.9414 16.6289C30.0293 15.7852 30.0117 13.9629 29.9121 13.125C29.4844 9.69726 27.9082 6.57421 25.3594 4.13086C23.0215 1.88086 20.0801 0.492184 16.8164 0.0820274C15.9903 -0.0175819 13.9102 -0.0175819 13.0957 0.0878868ZM10.7461 9.15234C10.9512 9.21093 11.3028 9.5332 12.9961 11.2148L15 13.207L17.0098 11.2148C19.0899 9.14062 19.166 9.08203 19.6348 9.08203C20.2852 9.08203 20.918 9.71484 20.918 10.3652C20.918 10.834 20.8594 10.9102 18.7852 12.9902L16.793 15L18.7852 17.0098C20.8594 19.0898 20.918 19.166 20.918 19.6348C20.918 20.2852 20.2852 20.918 19.6348 20.918C19.166 20.918 19.0899 20.8594 17.0098 18.7852L15 16.793L12.9961 18.7852C10.9102 20.8594 10.834 20.918 10.3653 20.918C9.71486 20.918 9.08205 20.2852 9.08205 19.6348C9.08205 19.166 9.14065 19.0898 11.2149 17.0039L13.2071 15L11.2149 12.9902C9.14065 10.9102 9.08205 10.834 9.08205 10.3652C9.08205 9.73242 9.709 9.09375 10.336 9.08203C10.4297 9.08203 10.6113 9.11132 10.7461 9.15234Z" fill="#CCCCCC"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-order__wrapper">
+                                            <div class="product-order__order">
+                                                <a href="#" class="product-order__preview">
+                                                    <img src="./img/product-list/product1.png" alt="Цветной дым голубой Sky Blue MA0509">
+                                                </a>
+                                                <div class="product-order__offer">
+                                                    <a href="#" class="product-order__title">Цветной дым голубой Sky Blue MA0509</a>
+                                                    <span class="product-order__counter">
+                                                        <span class="product-order__count">1</span> x <span class="product-order__price">12.00 BYN</span>
+                                                    </span>
+                                                </div>
+                                                <button class="header-actions-popup__close" data-action="remove-product">
+                                                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.0957 0.0878868C10.336 0.451168 7.85158 1.5 5.59572 3.26953C5.06252 3.68554 3.68557 5.06836 3.26369 5.60742C1.47658 7.86914 0.398458 10.4883 0.0644735 13.3301C-0.0175578 13.998 -0.0175578 15.9902 0.0586141 16.6406C0.357442 19.1602 1.1426 21.2988 2.53127 23.3789C4.36525 26.1152 7.10158 28.2012 10.2129 29.2441C11.0449 29.5195 11.6192 29.666 12.5684 29.8301C13.5821 30.0117 15.7383 30.0527 16.8223 29.9121C20.2149 29.4902 23.1797 28.0371 25.6113 25.6113C28.0723 23.1445 29.5781 20.0215 29.9414 16.6289C30.0293 15.7852 30.0117 13.9629 29.9121 13.125C29.4844 9.69726 27.9082 6.57421 25.3594 4.13086C23.0215 1.88086 20.0801 0.492184 16.8164 0.0820274C15.9903 -0.0175819 13.9102 -0.0175819 13.0957 0.0878868ZM10.7461 9.15234C10.9512 9.21093 11.3028 9.5332 12.9961 11.2148L15 13.207L17.0098 11.2148C19.0899 9.14062 19.166 9.08203 19.6348 9.08203C20.2852 9.08203 20.918 9.71484 20.918 10.3652C20.918 10.834 20.8594 10.9102 18.7852 12.9902L16.793 15L18.7852 17.0098C20.8594 19.0898 20.918 19.166 20.918 19.6348C20.918 20.2852 20.2852 20.918 19.6348 20.918C19.166 20.918 19.0899 20.8594 17.0098 18.7852L15 16.793L12.9961 18.7852C10.9102 20.8594 10.834 20.918 10.3653 20.918C9.71486 20.918 9.08205 20.2852 9.08205 19.6348C9.08205 19.166 9.14065 19.0898 11.2149 17.0039L13.2071 15L11.2149 12.9902C9.14065 10.9102 9.08205 10.834 9.08205 10.3652C9.08205 9.73242 9.709 9.09375 10.336 9.08203C10.4297 9.08203 10.6113 9.11132 10.7461 9.15234Z" fill="#CCCCCC"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="popup-cart__price">
+                                        <span>Подытог</span>
+                                        <span class="order-price">210.00 BYN</span>
+                                    </div>
+
+                                    <div class="popup-cart__buttons">
+                                        <div class="button-bottom-wrapper">
+                                            <div class="button-wrapper">
+                                                <a href="./cart.html" class="card-actions__button stroke-button" data-open="open-full-cart">Перейти в корзину</a>
+                                            </div>
+                                            <button class="product-card__button button-filled" data-action="order-to-one-click">
+                                                <span>Оформить заказ</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <button class="header__button button-filled" data-action="order-phone-l">
+                            <span>Заказать звонок</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header__container">
+                    <div class="burger-nav-panel">
+                        <button class="close-burger" data-action="close-burger">
+                            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0957 0.0878868C10.336 0.451168 7.85158 1.5 5.59572 3.26953C5.06252 3.68554 3.68557 5.06836 3.26369 5.60742C1.47658 7.86914 0.398458 10.4883 0.0644735 13.3301C-0.0175578 13.998 -0.0175578 15.9902 0.0586141 16.6406C0.357442 19.1602 1.1426 21.2988 2.53127 23.3789C4.36525 26.1152 7.10158 28.2012 10.2129 29.2441C11.0449 29.5195 11.6192 29.666 12.5684 29.8301C13.5821 30.0117 15.7383 30.0527 16.8223 29.9121C20.2149 29.4902 23.1797 28.0371 25.6113 25.6113C28.0723 23.1445 29.5781 20.0215 29.9414 16.6289C30.0293 15.7852 30.0117 13.9629 29.9121 13.125C29.4844 9.69726 27.9082 6.57421 25.3594 4.13086C23.0215 1.88086 20.0801 0.492184 16.8164 0.0820274C15.9903 -0.0175819 13.9102 -0.0175819 13.0957 0.0878868ZM10.7461 9.15234C10.9512 9.21093 11.3028 9.5332 12.9961 11.2148L15 13.207L17.0098 11.2148C19.0899 9.14062 19.166 9.08203 19.6348 9.08203C20.2852 9.08203 20.918 9.71484 20.918 10.3652C20.918 10.834 20.8594 10.9102 18.7852 12.9902L16.793 15L18.7852 17.0098C20.8594 19.0898 20.918 19.166 20.918 19.6348C20.918 20.2852 20.2852 20.918 19.6348 20.918C19.166 20.918 19.0899 20.8594 17.0098 18.7852L15 16.793L12.9961 18.7852C10.9102 20.8594 10.834 20.918 10.3653 20.918C9.71486 20.918 9.08205 20.2852 9.08205 19.6348C9.08205 19.166 9.14065 19.0898 11.2149 17.0039L13.2071 15L11.2149 12.9902C9.14065 10.9102 9.08205 10.834 9.08205 10.3652C9.08205 9.73242 9.709 9.09375 10.336 9.08203C10.4297 9.08203 10.6113 9.11132 10.7461 9.15234Z" fill="#CCCCCC"/>
+                            </svg>
+                        </button>
+                        
+                        <div class="header-actions__actions-wrapper">
+                            <div class="header__actions header-actions">
+                                <div class="header-actions__action" data-status="favorite">
+                                    <a href="#" class="nav-link">
+                                        <img src="./img/icons/fav-icon.svg" class="header-actions__icon" alt="favorite">
+        
+                                        <img src="./img/icons/fav-icon-red.svg" class="icon-overlay" alt="favorite">
+                                    </a>
+                                    <div class="action-status action-status_empty">
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-navigation">
+                        <div class="header-navigation__wrapper">
+                            <div class="header-navigation__el header-navigation__el_wrapper">
+                                <div class="header-navigation__head-el">
+                                    <div class="header-navigation__icon">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span class="header-navigation__text">Каталог</span>
+                                </div>
+
+                                <div class="header-submenu">
+                                    <div class="header-submenu__el header-submenu__el_menu">
+                                        <span>Салюты</span>
+                                        <img src="./img/icons/arrow-right.svg" alt="more" class="header-submenu__icon">
+
+                                        <div class="header-submenu__submenu">
+                                            <div class="header-submenu__el">
+                                                <a href="#">Элитные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Малые салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Средние салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Большие салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Суперсалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Мегасалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На день рождения</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На свадьбу</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На юбилей</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На Новый год</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Наборы салютов</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Эксклюзивные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Веерные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Высотные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Одиночные салюты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-submenu__el header-submenu__el_menu">
+                                        <span>Фейерверки</span>
+                                        <img src="./img/icons/arrow-right.svg" alt="more" class="header-submenu__icon">
+
+                                        <div class="header-submenu__submenu">
+                                            <div class="header-submenu__el">
+                                                <a href="#">Элитные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Малые салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Средние салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Большие салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Суперсалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Мегасалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На день рождения</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На свадьбу</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На юбилей</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На Новый год</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Наборы салютов</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Эксклюзивные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Веерные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Высотные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Одиночные салюты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-submenu__el header-submenu__el_menu">
+                                        <span>Фонтаны</span>
+                                        <img src="./img/icons/arrow-right.svg" alt="more" class="header-submenu__icon">
+
+                                        <div class="header-submenu__submenu">
+                                            <div class="header-submenu__el">
+                                                <a href="#">Элитные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Малые салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Средние салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Большие салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Суперсалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Мегасалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На день рождения</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На свадьбу</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На юбилей</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На Новый год</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Наборы салютов</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Эксклюзивные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Веерные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Высотные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Одиночные салюты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-submenu__el header-submenu__el_menu">
+                                        <span>Цветной дым (фаеры)</span>
+                                        <img src="./img/icons/arrow-right.svg" alt="more" class="header-submenu__icon">
+
+                                        <div class="header-submenu__submenu">
+                                            <div class="header-submenu__el">
+                                                <a href="#">Элитные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Малые салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Средние салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Большие салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Суперсалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Мегасалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На день рождения</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На свадьбу</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На юбилей</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На Новый год</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Наборы салютов</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Эксклюзивные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Веерные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Высотные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Одиночные салюты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Пиротехнические ракеты</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Римские свечи</a>
+                                    </div>
+                                    <div class="header-submenu__el header-submenu__el_menu">
+                                        <span>Бенгальские огни</span>
+                                        <img src="./img/icons/arrow-right.svg" alt="more" class="header-submenu__icon">
+
+                                        <div class="header-submenu__submenu">
+                                            <div class="header-submenu__el">
+                                                <a href="#">Элитные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Малые салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Средние салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Большие салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Суперсалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Мегасалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На день рождения</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На свадьбу</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На юбилей</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На Новый год</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Наборы салютов</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Эксклюзивные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Веерные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Высотные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Одиночные салюты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-submenu__el header-submenu__el_menu">
+                                        <span>Петарды</span>
+                                        <img src="./img/icons/arrow-right.svg" alt="more" class="header-submenu__icon">
+
+                                        <div class="header-submenu__submenu">
+                                            <div class="header-submenu__el">
+                                                <a href="#">Элитные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Малые салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Средние салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Большие салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Суперсалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Мегасалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На день рождения</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На свадьбу</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На юбилей</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На Новый год</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Наборы салютов</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Эксклюзивные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Веерные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Высотные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Одиночные салюты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-submenu__el header-submenu__el_menu">
+                                        <span>Хлопушки (конфетти)</span>
+                                        <img src="./img/icons/arrow-right.svg" alt="more" class="header-submenu__icon">
+
+                                        <div class="header-submenu__submenu">
+                                            <div class="header-submenu__el">
+                                                <a href="#">Элитные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Малые салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Средние салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Большие салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Суперсалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Мегасалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На день рождения</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На свадьбу</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На юбилей</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На Новый год</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Наборы салютов</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Эксклюзивные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Веерные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Высотные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Одиночные салюты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Свечи для торта</a>
+                                    </div>
+                                    <div class="header-submenu__el header-submenu__el_menu">
+                                        <span>Фестивальные шары</span>
+                                        <img src="./img/icons/arrow-right.svg" alt="more" class="header-submenu__icon">
+
+                                        <div class="header-submenu__submenu">
+                                            <div class="header-submenu__el">
+                                                <a href="#">Элитные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Малые салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Средние салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Большие салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Суперсалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Мегасалюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На день рождения</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На свадьбу</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На юбилей</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">На Новый год</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Наборы салютов</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Эксклюзивные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Веерные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Высотные салюты</a>
+                                            </div>
+                                            <div class="header-submenu__el">
+                                                <a href="#">Одиночные салюты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Профессиональная пиротехника</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Сценическая пиротехника</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Небесные фонарики</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Готовые наборы</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Новинки</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="header-navigation__el">
+                                <div class="header-navigation__head-el">
+                                    <a href="#" class="header-navigation__text">Фейерверки оптом</a>
+                                </div>
+                            </div>
+
+                            <div class="header-navigation__el header-navigation__el_wrapper">
+                                <div class="header-navigation__head-el">
+                                    <span class="header-navigation__text">Услуги</span>
+                                </div>
+
+                                <div class="header-submenu">
+                                    <div class="header-submenu__el">
+                                        <a href="#">Салют на свадьбу</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Фаер шоу</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Свадебное фаер шоу</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Салют шоу</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Салют на день рождения</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Салют на выпускной</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Пиромузыкальное шоу</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="header-navigation__el header-navigation__el_wrapper">
+                                <div class="header-navigation__head-el">
+                                    <span class="header-navigation__text">О нас</span>
+                                </div>
+
+                                <div class="header-submenu">
+                                    <div class="header-submenu__el">
+                                        <a href="#">Магазины</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Подарочный сертификат</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Дисконтная программа</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Сотрудничество</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">FAQ</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="header-navigation__el header-navigation__el_wrapper">
+                                <div class="header-navigation__head-el">
+                                    <span class="header-navigation__text">Покупателю</span>
+                                </div>
+
+                                <div class="header-submenu">
+                                    <div class="header-submenu__el">
+                                        <a href="#">Как купить</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Доставка</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Самовывоз</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Оплата</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Возврат товара</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Видеокаталог</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Статьи</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Идеи подарков</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Техника безопасности</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Гарантия от производителя</a>
+                                    </div>
+                                    <div class="header-submenu__el">
+                                        <a href="#">Политика конфиденциальности</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="header-navigation__el">
+                                <div class="header-navigation__head-el">
+                                    <a href="#" class="header-navigation__text">Отзывы</a>
+                                </div>
+                            </div>
+
+                            <div class="header-navigation__el">
+                                <div class="header-navigation__head-el">
+                                    <a href="#" class="header-navigation__text">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="haeder-info-connect">
+                        <div class="haeder-info-connect__el">
+                            <div class="haeder-info-connect__icon">
+                                <img src="./img/icons/phone-red.svg" alt="phone">
+                            </div>
+                            <div class="info-block">
+                                <a href="tel:+375291442434" class="info-block__number">+375 (29) 144-24-34</a>
+                                <p class="info-block__text">с 9:00 до 19:00 ежедневно</p>
+                            </div>
+                        </div>
+                        <div class="haeder-info-connect__el">
+                            <div class="haeder-info-connect__icon">
+                                <img src="./img/icons/mail-red.svg" alt="mail">
+                            </div>
+                            <div class="info-block">
+                                <a href="mailto:ep.mog@yandex.by" class="info-block__number">ep.mog@yandex.by</a>
+                            </div>
+                        </div>
+                        <div class="haeder-info-connect__el haeder-info-connect__address">
+                            <div class="haeder-info-connect__icon">
+                                <img src="./img/icons/location-red.svg" alt="location">
+                            </div>
+                            <div class="info-block">
+                                <a href="#" class="info-block__address">Адреса магазинов</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__roadmap roadmap" data-aos="fade-right" data-aos-duration="800">
+                <div class="roadmap__container">
+                    <span class="roadmap-line">
+                        <a href="index.html" class="roadmap__page">Главная</a>
+                        <span>/</span>
+                        <span class="roadmap__current-page">Акции</span>
+                    </span>
+                </div>
+            </div>
+
+            <section class="main__shares shares">
+                <div class="shares__container">
+                    <h1 class="shares__title" data-aos="fade-up" data-aos-duration="1200">Акции</h1>
+                    <div class="shares-list">
+                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="share-card__img">
+                                <img src="./img/shares/card1.png" alt="Акция">
+                            </div>
+                            <div class="share-card__frame">
+                                <a href="#" class="share-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="share-card__img">
+                                <img src="./img/shares/card2.png" alt="Акция">
+                            </div>
+                            <div class="share-card__frame">
+                                <a href="#" class="share-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="share-card__img">
+                                <img src="./img/shares/card3.png" alt="Акция">
+                            </div>
+                            <div class="share-card__frame">
+                                <a href="#" class="share-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="share-card__img">
+                                <img src="./img/shares/card4.png" alt="Акция">
+                            </div>
+                            <div class="share-card__frame">
+                                <a href="#" class="share-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="share-card__img">
+                                <img src="./img/shares/card5.png" alt="Акция">
+                            </div>
+                            <div class="share-card__frame">
+                                <a href="#" class="share-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="share-card__img">
+                                <img src="./img/shares/card6.png" alt="Акция">
+                            </div>
+                            <div class="share-card__frame">
+                                <a href="#" class="share-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="share-card__img">
+                                <img src="./img/shares/card7.png" alt="Акция">
+                            </div>
+                            <div class="share-card__frame">
+                                <a href="#" class="share-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="share-card__img">
+                                <img src="./img/shares/card8.png" alt="Акция">
+                            </div>
+                            <div class="share-card__frame">
+                                <a href="#" class="share-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__order order">
+                <div class="order__container">
+                    <div class="order-card" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="order__walpapper">
+                            <img src="./img/section-wallpapers/wallpaper.png" alt="Салют">
+                            <div class="walpapper-filter">
+                                <div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="order__article article">
+                            <h2 class="article__title" data-aos="fade-up" data-aos-duration="1000">Закажите бесплатную <br> консультацию!</h2>
+                            <p class="article__paragraph" data-aos="rm-opacity" data-aos-duration="1600" data-aos-delay="200">Сложно определиться с выбором? Нужна помощь специалиста? Позвоните нам или оставьте заявку на сайте — организуем ваш праздник вместе!</p>
+                        </div>
+                        <form class="order-form">
+                            <div class="order-form__inputs">
+                                <div class="order-form__el" data-aos="fade-up" data-aos-duration="800">
+                                    <label for="user-name" class="order-form__label">Ваше имя</label>
+                                    <div class="input-box">
+                                        <span>*</span>
+                                        <input type="text" class="order-form__input order-form__input_necessarily" id="user-name" placeholder="Ваше имя">
+                                    </div>
+                                </div>
+                                <div class="order-form__el" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                                    <label for="user-email" class="order-form__label">E-mail</label>
+                                    <div class="input-box">
+                                        <span>*</span>
+                                        <input type="text" class="order-form__input order-form__input_necessarily" id="user-email" placeholder="name@example.com">
+                                    </div>
+                                </div>
+                                <div class="order-form__el order-form__el_phone-number" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                    <label for="phone-number" class="order-form__label">Телефон</label>
+                                    <div class="input-box">
+                                        <span>*</span>
+                                        <input type="tel" class="order-form__input input-phone-number" id="phone-number" placeholder="+375 (xx) xxx-xx-xx">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="order-form__button button-filled"  data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+                                <span>Отправить</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer-top">
+                    <div class="footer-top__offer">
+                        <div class="footer-top__logo">
+                            <img src="./img/full-logo-white.svg" alt="logo">
+                        </div>
+                        <div class="haeder-info-connect haeder-info-connect_footer">
+                            <div class="haeder-info-connect__el">
+                                <div class="haeder-info-connect__icon">
+                                    <img src="./img/icons/phone-white.svg" alt="phone">
+                                </div>
+                                <div class="info-block">
+                                    <a href="tel:+375291442434" class="info-block__number">+375 (29) 144-24-34</a>
+                                    <p class="info-block__text">с 9:00 до 19:00 ежедневно</p>
+                                </div>
+                            </div>
+                            <div class="haeder-info-connect__el mail">
+                                <div class="haeder-info-connect__icon">
+                                    <img src="./img/icons/mail-white.svg" alt="mail">
+                                </div>
+                                <div class="info-block">
+                                    <a href="mailto:ep.mog@yandex.by" class="info-block__number">ep.mog@yandex.by</a>
+                                </div>
+                            </div>
+
+                            <button class="footer__button button-filled">
+                                <span>Заказать звонок</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer-top__info">
+                        <p class="footer-top__s-text">ООО «Энергия праздника»</p>
+                        <p class="footer-top__s-text">УНП 791185388</p>
+                        <a href="#" class="footer-top__s-link">Публичная оферта</a>
+                        <a href="#" class="footer-top__s-link">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer-navigation">
+                        <div class="footer-navigation__part">
+                            <a href="#" class="footer-navigation__el">Каталог</a>
+                            <a href="#" class="footer-navigation__el">Акции</a>
+                            <a href="#" class="footer-navigation__el">Фейерверки оптом</a>
+                            <a href="#" class="footer-navigation__el">Услуги</a>
+                        </div>
+                        <div class="footer-navigation__part">
+                            <a href="#" class="footer-navigation__el">О нас</a>
+                            <a href="#" class="footer-navigation__el">Покупателю</a>
+                            <a href="#" class="footer-navigation__el">Отзывы</a>
+                            <a href="#" class="footer-navigation__el">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social__button footer-social__button_yt">
+                            <div class="footer-social__icon">
+                                <img src="./img/icons/yt-white.svg" alt="youtube">
+                            </div>
+                            <p class="footer-social__name">Видеообзоры товаров</p>
+                        </a>
+                        <a href="#" class="footer-social__button footer-social__button_insta">
+                            <div class="footer-social__icon">
+                                <img src="./img/icons/insta-white.svg" alt="instagram">
+                            </div>
+                            <p class="footer-social__name">Новинки и советы по выбору</p>
+                        </a>
+                        <a href="#" class="footer-social__button footer-social__button_vk">
+                            <div class="footer-social__icon">
+                                <img src="./img/icons/vk-white.svg" alt="vkontakte">
+                            </div>
+                            <p class="footer-social__name">Группа с идеями для подарков</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <p class="copyright">2023 © ООО «Энергия праздника»</p>
+                </div>
+                <div class="footer-bottom">
+                    <p class="caution">
+                        Внимание! Сайт не является интернет-магазином. Вся приведённая на сайте информация, включая цены, носит исключительно рекламно-информационный характер и не является публичной офертой. Изображение товаров на сайте могут отличаться от товаров в продаже. Сайт разработан для информирования клиентов об ассортименте товаров. Полную информацию о товаре можно получить у продавцов-консультантов. В целях безопасности сеть магазинов фейерверков «Энергия Праздника» реализует товар строго с 18 лет!
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <div class="popup order-on-one-click ">
+            <div class="order-on-one-click__wrapper">
+                <button class="order-on-one-click__close" data-action="close-order-on-one-click">
+                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.0957 0.0878868C10.336 0.451168 7.85158 1.5 5.59572 3.26953C5.06252 3.68554 3.68557 5.06836 3.26369 5.60742C1.47658 7.86914 0.398458 10.4883 0.0644735 13.3301C-0.0175578 13.998 -0.0175578 15.9902 0.0586141 16.6406C0.357442 19.1602 1.1426 21.2988 2.53127 23.3789C4.36525 26.1152 7.10158 28.2012 10.2129 29.2441C11.0449 29.5195 11.6192 29.666 12.5684 29.8301C13.5821 30.0117 15.7383 30.0527 16.8223 29.9121C20.2149 29.4902 23.1797 28.0371 25.6113 25.6113C28.0723 23.1445 29.5781 20.0215 29.9414 16.6289C30.0293 15.7852 30.0117 13.9629 29.9121 13.125C29.4844 9.69726 27.9082 6.57421 25.3594 4.13086C23.0215 1.88086 20.0801 0.492184 16.8164 0.0820274C15.9903 -0.0175819 13.9102 -0.0175819 13.0957 0.0878868ZM10.7461 9.15234C10.9512 9.21093 11.3028 9.5332 12.9961 11.2148L15 13.207L17.0098 11.2148C19.0899 9.14062 19.166 9.08203 19.6348 9.08203C20.2852 9.08203 20.918 9.71484 20.918 10.3652C20.918 10.834 20.8594 10.9102 18.7852 12.9902L16.793 15L18.7852 17.0098C20.8594 19.0898 20.918 19.166 20.918 19.6348C20.918 20.2852 20.2852 20.918 19.6348 20.918C19.166 20.918 19.0899 20.8594 17.0098 18.7852L15 16.793L12.9961 18.7852C10.9102 20.8594 10.834 20.918 10.3653 20.918C9.71486 20.918 9.08205 20.2852 9.08205 19.6348C9.08205 19.166 9.14065 19.0898 11.2149 17.0039L13.2071 15L11.2149 12.9902C9.14065 10.9102 9.08205 10.834 9.08205 10.3652C9.08205 9.73242 9.709 9.09375 10.336 9.08203C10.4297 9.08203 10.6113 9.11132 10.7461 9.15234Z" fill="#CCCCCC"/>
+                    </svg>
+                </button>
+
+                <div class="order-on-one-click__article article">
+                    <h3 class="article__title order-on-one-click__title">Заказать в 1 клик</h3>
+                </div>
+                <div class="order-on-one-click__product product-order">
+                    <a href="#" class="product-order__preview">
+                        <img src="./img/product-list/product1.png" alt="Цветной дым голубой Sky Blue MA0509">
+                    </a>
+                    <div class="product-order__offer">
+                        <a href="#" class="product-order__title">Цветной дым голубой Sky Blue MA0509</a>
+                        <span class="product-order__counter">
+                            <span class="product-order__count">1</span> x <span class="product-order__price">12.00 BYN</span>
+                        </span>
+                    </div>
+                </div>
+                <form class="order-form">
+                    <div class="order-form__inputs">
+                        <div class="order-form__el">
+                            <label for="order-name" class="order-form__label">Ваше имя</label>
+                            <div class="input-box">
+                                <span>*</span>
+                                <input type="text" class="order-form__input order-form__input_necessarily" id="order-name" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="order-form__el order-form__el_phone-number">
+                            <label for="phone-number" class="order-form__label">Телефон</label>
+                            <div class="input-box">
+                                <span>*</span>
+                                <input type="tel" class="order-form__input input-phone-number" name="phone-number" placeholder="+375 (xx) xxx-xx-xx">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="order-form__button button-filled">
+                        <span>Отправить заказ</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup thanks-popup"> <!-- Добавь класс "_opened", чтобы модалка открылась -->
+            <div class="thanks-popup__wrapper">
+                <button class="order-on-one-click__close" data-action="close-thanks">
+                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.0957 0.0878868C10.336 0.451168 7.85158 1.5 5.59572 3.26953C5.06252 3.68554 3.68557 5.06836 3.26369 5.60742C1.47658 7.86914 0.398458 10.4883 0.0644735 13.3301C-0.0175578 13.998 -0.0175578 15.9902 0.0586141 16.6406C0.357442 19.1602 1.1426 21.2988 2.53127 23.3789C4.36525 26.1152 7.10158 28.2012 10.2129 29.2441C11.0449 29.5195 11.6192 29.666 12.5684 29.8301C13.5821 30.0117 15.7383 30.0527 16.8223 29.9121C20.2149 29.4902 23.1797 28.0371 25.6113 25.6113C28.0723 23.1445 29.5781 20.0215 29.9414 16.6289C30.0293 15.7852 30.0117 13.9629 29.9121 13.125C29.4844 9.69726 27.9082 6.57421 25.3594 4.13086C23.0215 1.88086 20.0801 0.492184 16.8164 0.0820274C15.9903 -0.0175819 13.9102 -0.0175819 13.0957 0.0878868ZM10.7461 9.15234C10.9512 9.21093 11.3028 9.5332 12.9961 11.2148L15 13.207L17.0098 11.2148C19.0899 9.14062 19.166 9.08203 19.6348 9.08203C20.2852 9.08203 20.918 9.71484 20.918 10.3652C20.918 10.834 20.8594 10.9102 18.7852 12.9902L16.793 15L18.7852 17.0098C20.8594 19.0898 20.918 19.166 20.918 19.6348C20.918 20.2852 20.2852 20.918 19.6348 20.918C19.166 20.918 19.0899 20.8594 17.0098 18.7852L15 16.793L12.9961 18.7852C10.9102 20.8594 10.834 20.918 10.3653 20.918C9.71486 20.918 9.08205 20.2852 9.08205 19.6348C9.08205 19.166 9.14065 19.0898 11.2149 17.0039L13.2071 15L11.2149 12.9902C9.14065 10.9102 9.08205 10.834 9.08205 10.3652C9.08205 9.73242 9.709 9.09375 10.336 9.08203C10.4297 9.08203 10.6113 9.11132 10.7461 9.15234Z" fill="#CCCCCC"/>
+                    </svg>
+                </button>
+                <div class="thanks-popup__article article">
+                    <h3 class="article__title thanks-popup__title">Спасибо за доверие!</h3>
+                    <p class="article__paragraph thanks-popup__paragraph">Мы получили вашу заявку. В течение пары часов наш менеджер свяжется с вами.</p>
+                </div>
+                <button class="thanks-popup__button" data-action="close-thanks">Спасибо, жду!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/searchbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/order-phone.js"></script>
+    <script src="./js/content-margin.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/cart-popup.js"></script>
+
+    <script src="./js/maska-nomera.js"></script>
+    <script>
+        $('.input-phone-number').mask('+375 (99) 999-99-99');
+        
+        $.fn.setCursorPosition = function(pos) {
+        if ($(this).get(0).setSelectionRange) {
+            $(this).get(0).setSelectionRange(pos, pos);
+        } else if ($(this).get(0).createTextRange) {
+            var range = $(this).get(0).createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', pos);
+            range.moveStart('character', pos);
+            range.select();
+        }
+        };
+        
+        
+        $('input[type="tel"]').click(function(){
+            $(this).setCursorPosition(6);  // set position number
+        });
+    </script>
+</body>
+</html>

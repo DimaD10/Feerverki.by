@@ -1530,6 +1530,7 @@ input[type=range]::-moz-range-thumb {
   position: relative;
   padding-bottom: 60px;
 }
+
 .subcategories-category {
   display: -webkit-box;
   display: -ms-flexbox;
