@@ -38,17 +38,22 @@ const categorySlider = new Swiper('.subcategories-slider', {
         prevEl: '.subcategories-slider__btn-prev',
     },
     breakpoints: {
-        // when window width is >= 320px
         320: {
           slidesPerView: 2,
           spaceBetween: 20
         },
-        // when window width is >= 480px
-        991.98: {
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        767.98: {
             slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        991.98: {
+            slidesPerView: 5,
             spaceBetween: 30,
         },
-        // when window width is >= 640px
         1200: {
             slidesPerView: 6,
             spaceBetween: 44,

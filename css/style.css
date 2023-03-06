@@ -3206,6 +3206,20 @@ body::-webkit-scrollbar-thumb {
 .header-navigation__el:hover .header-navigation__icon span {
   background-color: #E81212;
 }
+.header-navigation__el_current .header-navigation__head-el {
+  background-color: #fff;
+}
+.header-navigation__el_current span, .header-navigation__el_current a {
+  color: #E81212;
+}
+@media (max-width: 991.98px) {
+  .header-navigation__el_current span, .header-navigation__el_current a {
+    color: #443E3E;
+  }
+}
+.header-navigation__el_current .header-navigation__icon span {
+  background-color: #E81212;
+}
 .header-navigation__head-el {
   display: -webkit-box;
   display: -ms-flexbox;

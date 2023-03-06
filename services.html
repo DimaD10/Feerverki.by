@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/shares.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/services.css">
     <link rel="icon" href="./img/logo.svg">
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -746,7 +747,7 @@
                                 </div>
                             </div>
 
-                            <div class="header-navigation__el header-navigation__el_current">
+                            <div class="header-navigation__el">
                                 <div class="header-navigation__head-el">
                                     <a href="shares.html" class="header-navigation__text">Акции</a>
                                 </div>
@@ -758,7 +759,7 @@
                                 </div>
                             </div>
 
-                            <div class="header-navigation__el header-navigation__el_wrapper">
+                            <div class="header-navigation__el header-navigation__el_wrapper header-navigation__el_current">
                                 <div class="header-navigation__head-el">
                                     <a href="services.html" class="header-navigation__text">Услуги</a>
                                 </div>
@@ -903,98 +904,132 @@
                     <span class="roadmap-line">
                         <a href="index.html" class="roadmap__page">Главная</a>
                         <span>/</span>
-                        <span class="roadmap__current-page">Акции</span>
+                        <span class="roadmap__current-page">Услуги</span>
                     </span>
                 </div>
             </div>
 
-            <section class="main__shares shares">
-                <div class="shares__container">
-                    <h1 class="shares__title" data-aos="fade-up" data-aos-duration="1200">Акции</h1>
-                    <div class="shares-list">
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card1.png" alt="Акция">
+            <section class="main__subcategories subcategories">
+                <div class="subcategories__container">
+                    <div class="subcategories__preview subcategories-preview" data-aos="rm-opacity" data-aos-duration="1200">
+                        <div class="subcategories-preview__bg">
+                            <img src="./img/section-wallpapers/services-page-bg1.png" alt="Салюты">
+                        </div>
+                        <h1 class="subcategories-preview__title">Наши <span>услуги</span></h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__catalog-categoryes catalog-categoryes">
+                <div class="catalog-categoryes__container">
+                    <div class="catalog-categoryes__list">
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/slider/walpapper-slide2.png" alt="Салюты">
                             </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Салюты</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="./catalog-category.html" class="category-card__button button-filled">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card2.png" alt="Акция">
+                        <div class="category-card category-card_wide" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/services-bg/img2.png" alt="Фаер шоу">
                             </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
-                                    <span>Подробнее</span>
-                                </a>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Фаер шоу</h3>
                             </div>
-                        </div>
-                        
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card3.png" alt="Акция">
-                            </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card4.png" alt="Акция">
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/services-bg/img3.png" alt="Свадебное фаер шоу">
                             </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Свадебное фаер шоу</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card5.png" alt="Акция">
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/services-bg/img4.png" alt="Салют шоу">
                             </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Салют шоу</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card6.png" alt="Акция">
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/services-bg/img5.png" alt="Салют на день рождения">
                             </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Салют на день рождения</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card7.png" alt="Акция">
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/services-bg/img6.png" alt="Салют на выпускной">
                             </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Салют на выпускной</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="share-card" data-aos="fade-up" data-aos-duration="800">
-                            <div class="share-card__img">
-                                <img src="./img/shares/card8.png" alt="Акция">
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/services-bg/img7.png" alt="Пиромузыкальное шоу">
                             </div>
-                            <div class="share-card__frame">
-                                <a href="#" class="share-card__button button-filled">
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Пиромузыкальное шоу</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
@@ -1034,10 +1069,10 @@
                                     </div>
                                 </div>
                                 <div class="order-form__el order-form__el_phone-number" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                    <label for="phone-number" class="order-form__label">Телефон</label>
+                                    <label for="user-phone-number" class="order-form__label">Телефон</label>
                                     <div class="input-box">
                                         <span>*</span>
-                                        <input type="tel" class="order-form__input input-phone-number" id="phone-number" placeholder="+375 (xx) xxx-xx-xx">
+                                        <input type="tel" class="order-form__input input-phone-number" id="user-phone-number" placeholder="+375 (xx) xxx-xx-xx">
                                     </div>
                                 </div>
                             </div>
@@ -1132,7 +1167,6 @@
             </div>
         </footer>
 
-
         <div class="popup order-on-one-click ">
             <div class="order-on-one-click__wrapper">
                 <button class="order-on-one-click__close" data-action="close-order-on-one-click">
@@ -1168,7 +1202,7 @@
                             <label for="phone-number" class="order-form__label">Телефон</label>
                             <div class="input-box">
                                 <span>*</span>
-                                <input type="tel" class="order-form__input input-phone-number" name="phone-number" placeholder="+375 (xx) xxx-xx-xx">
+                                <input type="tel" class="order-form__input input-phone-number" id="phone-number" placeholder="+375 (xx) xxx-xx-xx">
                             </div>
                         </div>
                     </div>
@@ -1176,6 +1210,16 @@
                         <span>Отправить заказ</span>
                     </button>
                 </form>
+            </div>
+        </div>
+
+        <div class="popup video-popup">
+            <div class="video-popup__wrapper">
+                <div class="video-popup__header">
+                    <button class="video-popup__close" data-action="close-video-popup">x</button>
+                </div>
+                <div class="close-video-popup__video">
+                </div>
             </div>
         </div>
 
@@ -1204,8 +1248,18 @@
     <script src="./js/burger.js"></script>
     <script src="./js/order-phone.js"></script>
     <script src="./js/content-margin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/sort-toggler.js"></script>
+    <script src="./js/question.js"></script>
+    <script src="./js/product-card.js"></script>
+    <script src="./js/product-sliders.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/cart-popup.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/filter-open.js"></script>
+    <script src="./js/range.js"></script>
 
     <script src="./js/maska-nomera.js"></script>
     <script>
