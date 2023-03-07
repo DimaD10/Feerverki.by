@@ -1438,7 +1438,7 @@ input[type=range]::-moz-range-thumb {
 .spoiler-list__list li::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 10px;
   left: 0;
   width: 3px;
   height: 3px;
