@@ -1,4 +1,4 @@
-const ratingItems = document.querySelectorAll(".user-rating__item");
+const ratingItems = document.querySelectorAll(".user-rate__item");
 const ratingItemsArr = Array.prototype.slice.call(ratingItems);
 
 ratingItems.forEach(el => {

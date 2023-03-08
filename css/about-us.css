@@ -1,0 +1,20 @@
+.main__service {
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .main__service {
+    margin-bottom: calc(0px + 50 * (100vw - 320px) / 880);
+  }
+}
+.main__head-page {
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .main__head-page {
+    margin-bottom: calc(50px + 50 * (100vw - 320px) / 880);
+  }
+}
+
+.meet-content {
+  margin-top: 0;
+}

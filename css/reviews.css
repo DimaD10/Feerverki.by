@@ -21,6 +21,17 @@
   padding: 50px;
   gap: 100px;
 }
+@media (max-width: 991.98px) {
+  .write-review__container .order-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: calc(30px + 20 * (100vw - 320px) / 671.98);
+    padding-left: calc(15px + 20 * (100vw - 320px) / 671.98);
+    padding-right: calc(15px + 20 * (100vw - 320px) / 671.98);
+  }
+}
 .write-review__container .article__title {
   color: #fff;
 }
@@ -45,11 +56,21 @@
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media (max-width: 991.98px) {
+  .write-review__container .order-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 .write-review__container .order-form__inputs {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: none;
+}
+.write-review__container .order-form__button {
+  max-width: none;
 }
 .write-review__article {
   -webkit-box-flex: 1;
@@ -81,7 +102,7 @@
   color: #E81212;
 }
 
-.user-rating {
+.user-rate__rating {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -91,25 +112,31 @@
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-.user-rating__item {
+
+.user-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user-rate__item {
   color: #FDEFB6;
   font-size: 22px;
   cursor: pointer;
   -webkit-transition: color ease-in-out 0.3s;
   transition: color ease-in-out 0.3s;
 }
-.user-rating__item:hover {
+.user-rate__item:hover {
   color: #ccc;
 }
-.user-rating__item:hover ~ .user-rating__item {
+.user-rate__item:hover ~ .user-rating__item {
   color: #FCCD05;
 }
 
-.user-rating[data-rate-total-value="1"] .user-rating__item:nth-child(n+5),
-.user-rating[data-rate-total-value="2"] .user-rating__item:nth-child(n+4),
-.user-rating[data-rate-total-value="3"] .user-rating__item:nth-child(n+3),
-.user-rating[data-rate-total-value="4"] .user-rating__item:nth-child(n+2),
-.user-rating[data-rate-total-value="5"] .user-rating__item:nth-child(n+1) {
+.user-rate__rating[data-rate-total-value="1"] .user-rate__item:nth-child(n+5),
+.user-rate__rating[data-rate-total-value="2"] .user-rate__item:nth-child(n+4),
+.user-rate__rating[data-rate-total-value="3"] .user-rate__item:nth-child(n+3),
+.user-rate__rating[data-rate-total-value="4"] .user-rate__item:nth-child(n+2),
+.user-rate__rating[data-rate-total-value="5"] .user-rate__item:nth-child(n+1) {
   color: #FCCD05;
 }
 
