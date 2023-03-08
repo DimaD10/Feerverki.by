@@ -1,0 +1,114 @@
+.page-title__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 576.98px) {
+  .page-title__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 5px;
+}
+.sort__button {
+  padding: 0 20px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #443E3E;
+  border: 1px solid transparent;
+  background-color: transparent;
+  -webkit-transition: border ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .sort__button {
+    height: calc(28px + 9 * (100vw - 320px) / 880);
+  }
+}
+.sort__button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#E81212), to(#FCCD05));
+  background: linear-gradient(90deg, #E81212 0%, #FCCD05 100%);
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.sort__button span {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  pointer-events: none;
+  white-space: nowrap;
+}
+@media (max-width: 1200px) {
+  .sort__button span {
+    font-size: calc(12px + 2 * (100vw - 320px) / 880);
+  }
+}
+.sort__button:hover {
+  border: 1px solid #443E3E;
+}
+
+.sort__button._current {
+  pointer-events: none;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.sort__button._current::before {
+  opacity: 1;
+}
+
+.main__questions {
+  width: auto;
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .main__questions {
+    margin-bottom: calc(0px + 50 * (100vw - 320px) / 880);
+  }
+}
+
+.questions__container {
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.questions__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.questions__header .sort {
+  overflow-x: auto;
+}

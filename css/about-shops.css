@@ -1,0 +1,38 @@
+.page-title__title span {
+  color: #FCCD05;
+}
+
+.main__information {
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .main__information {
+    margin-bottom: calc(50px + 50 * (100vw - 320px) / 880);
+  }
+}
+
+.inforamtion__article {
+  gap: 14px;
+  max-width: 700px;
+}
+.inforamtion__title {
+  margin-bottom: 24px;
+}
+.inforamtion__paragraph .bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #443E3E;
+}
+.inforamtion a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #E81212;
+}
+.inforamtion .number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #E81212;
+}
