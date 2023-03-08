@@ -60,3 +60,35 @@ const categorySlider = new Swiper('.subcategories-slider', {
         }
     },
 });
+
+const gallerySlider = new Swiper('.festival-gallery__slider', {
+    loop: true,
+    disableOnInteraction: false,
+    
+    navigation: {
+        nextEl: '.festival-gallery__button-next',
+        prevEl: '.festival-gallery__button-prev',
+    },
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        567.98: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767.98: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        991.98: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        }
+    },
+});
