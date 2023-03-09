@@ -1,0 +1,104 @@
+.main__discont-cards {
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .main__discont-cards {
+    margin-bottom: calc(50px + 50 * (100vw - 320px) / 880);
+  }
+}
+
+.discont-cards__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+.discont-cards__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.discont-cards__article {
+  max-width: 575px;
+  gap: 14px;
+}
+.discont-cards__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.discont-cards__list_big {
+  gap: 50px;
+}
+@media (max-width: 1200px) {
+  .discont-cards__list_big {
+    gap: calc(20px + 30 * (100vw - 767.98px) / 432.02);
+  }
+}
+@media (max-width: 767.98px) {
+  .discont-cards__list_big {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: calc(10px + 10 * (100vw - 320px) / 447.98);
+  }
+  .discont-cards__list_big .discont-cards__card {
+    max-width: 500px;
+  }
+}
+.discont-cards__list_small {
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .discont-cards__list_small {
+    gap: calc(20px + 10 * (100vw - 767.98px) / 432.02);
+  }
+}
+@media (max-width: 991.98px) {
+  .discont-cards__list_small {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .discont-cards__list_small img {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .discont-cards__list_small {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: calc(10px + 10 * (100vw - 320px) / 447.98);
+  }
+}
+.discont-cards__card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+.discont-cards__card img {
+  max-width: 100%;
+}
+
+.list-box__list li span {
+  color: #E81212;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+}

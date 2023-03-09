@@ -24,3 +24,6 @@
     font-size: calc(30px + 18 * (100vw - 320px) / 880);
   }
 }
+.main__page-title .page-title__title span {
+  color: #FCCD05;
+}
