@@ -191,6 +191,7 @@ body {
   font-family: Rubik;
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: thin;
 }
 body::-webkit-scrollbar {
@@ -2876,14 +2877,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .wrapper {
-  overflow: visible;
+  overflow: hidden;
 }
-@media (max-width: 991.98px) {
-  .wrapper {
-    overflow: hidden;
-  }
-}
-
 .header {
   z-index: 999;
   position: fixed;
@@ -4036,6 +4031,7 @@ body::-webkit-scrollbar-thumb {
 .main__fisrt-screen {
   height: 500px;
   overflow: hidden;
+  max-width: 100vw;
   position: relative;
 }
 @media (max-width: 991.98px) {
@@ -4048,6 +4044,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   z-index: 99;
+  overflow: hidden;
 }
 .fisrt-screen__slide {
   position: relative;
@@ -4754,6 +4751,9 @@ body::-webkit-scrollbar-thumb {
           align-items: flex-start;
 }
 .service_tiny .service-card__paragraph {
+  text-align: left;
+}
+.service_tiny .service-card__name {
   text-align: left;
 }
 

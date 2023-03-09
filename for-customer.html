@@ -9,10 +9,10 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about-us.css">
-    <link rel="stylesheet" href="css/about-discont.css">
+    <link rel="stylesheet" href="css/for-customer.css">
     <link rel="icon" href="./img/logo.svg">
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -137,7 +137,7 @@
     
                         <div class="header-actions__actions-wrapper">
                             <div class="header-actions__action" data-status="favorite">
-                                <a href="#" class="nav-link">
+                                <a href="favorite.html" class="nav-link">
                                     <img src="./img/icons/fav-icon.svg" class="header-actions__icon" alt="favorite">
 
                                     <img src="./img/icons/fav-icon-red.svg" class="icon-overlay" alt="favorite">
@@ -294,14 +294,14 @@
                     <div class="header-navigation">
                         <div class="header-navigation__wrapper">
                             <div class="header-navigation__el header-navigation__el_wrapper">
-                                <div class="header-navigation__head-el">
+                                <a href="main-catalog.html" class="header-navigation__head-el">
                                     <div class="header-navigation__icon">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                     </div>
                                     <span class="header-navigation__text">Каталог</span>
-                                </div>
+                                </a>
 
                                 <div class="header-submenu">
                                     <div class="header-submenu__el header-submenu__el_menu">
@@ -755,7 +755,7 @@
 
                             <div class="header-navigation__el">
                                 <div class="header-navigation__head-el">
-                                    <a href="#" class="header-navigation__text">Фейерверки оптом</a>
+                                    <a href="./opt-firework.html" class="header-navigation__text">Фейерверки оптом</a>
                                 </div>
                             </div>
 
@@ -769,7 +769,7 @@
                                         <a href="#">Салют на свадьбу</a>
                                     </div>
                                     <div class="header-submenu__el">
-                                        <a href="#">Фаер шоу</a>
+                                        <a href="service-category.html">Фаер шоу</a>
                                     </div>
                                     <div class="header-submenu__el">
                                         <a href="#">Свадебное фаер шоу</a>
@@ -789,31 +789,31 @@
                                 </div>
                             </div>
 
-                            <div class="header-navigation__el header-navigation__el_wrapper header-navigation__el_current">
+                            <div class="header-navigation__el header-navigation__el_wrapper">
                                 <div class="header-navigation__head-el">
-                                    <span class="header-navigation__text">О нас</span>
+                                    <a href="about-us.html" class="header-navigation__text">О нас</a>
                                 </div>
 
                                 <div class="header-submenu">
                                     <div class="header-submenu__el">
-                                        <a href="#">Магазины</a>
+                                        <a href="about-shops.html">Магазины</a>
                                     </div>
                                     <div class="header-submenu__el">
-                                        <a href="#">Подарочный сертификат</a>
+                                        <a href="about-gift.html">Подарочный сертификат</a>
                                     </div>
                                     <div class="header-submenu__el">
-                                        <a href="#">Дисконтная программа</a>
+                                        <a href="about-discont.html">Дисконтная программа</a>
                                     </div>
                                     <div class="header-submenu__el">
-                                        <a href="#">Сотрудничество</a>
+                                        <a href="about-coop.html">Сотрудничество</a>
                                     </div>
                                     <div class="header-submenu__el">
-                                        <a href="#">FAQ</a>
+                                        <a href="about-faq.html">FAQ</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="header-navigation__el header-navigation__el_wrapper">
+                            <div class="header-navigation__el header-navigation__el_wrapper header-navigation__el_current">
                                 <div class="header-navigation__head-el">
                                     <span class="header-navigation__text">Покупателю</span>
                                 </div>
@@ -857,13 +857,13 @@
 
                             <div class="header-navigation__el">
                                 <div class="header-navigation__head-el">
-                                    <a href="#" class="header-navigation__text">Отзывы</a>
+                                    <a href="reviews.html" class="header-navigation__text">Отзывы</a>
                                 </div>
                             </div>
 
                             <div class="header-navigation__el">
                                 <div class="header-navigation__head-el">
-                                    <a href="#" class="header-navigation__text">Контакты</a>
+                                    <a href="contacts.html" class="header-navigation__text">Контакты</a>
                                 </div>
                             </div>
                         </div>
@@ -904,76 +904,230 @@
                     <span class="roadmap-line">
                         <a href="index.html" class="roadmap__page">Главная</a>
                         <span>/</span>
-                        <a href="about-us.html" class="roadmap__page">О нас</a>
-                        <span>/</span>
-                        <span class="roadmap__current-page">Дисконтная программа</span>
+                        <span class="roadmap__current-page">Покупателю</span>
                     </span>
                 </div>
             </div>
 
             <section class="main__page-title page-title">
                 <div class="page-title__container">
-                    <h1 class="page-title__title" data-aos="fade-down" data-aos-duration="1000">Дисконтная <span>программа</span></h1>
+                    <h1 class="page-title__title" data-aos="fade-down" data-aos-duration="1000">Покупателю</h1>
                 </div>
             </section>
 
-            <div class="main__discont-cards discont-cards">
-                <div class="discont-cards__container">
-                    <div class="discont-cards__part">
-                        <div class="discont-cards__article article">
-                            <p class="article__paragraph discont-cards__paragraph" data-aos="rm-opacity" data-aos-duration="1000">
-                                Как работает дисконтная программа в наших магазинах фейерверков:
-                            </p>
-                            <div class="article__list-box list-box" data-aos="rm-opacity" data-aos-duration="1000">
-                                <ul class="list-box__list">
-                                    <li>при покупке на сумму от 100 ₽ вы получаете <span>«Серебряную карту»</span>, которая даёт скидку 10% на все покупки</li>
-                                    <li>при общей сумме покупки от 200 ₽, вам выдадут <span>«Золотую карту»</span>, которая даёт скидку 15% на все покупки</li>
-                                </ul>
+            <section class="main__service service service_tiny">
+                <div class="service__container">
+                    <div class="service-list">
+                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
+                            <div class="service-card__icon-box">
+                                <div class="service-card__icon">
+                                    <img src="./img/service-tiny-icon/icon1.svg" alt="Корзина">
+                                </div>
                             </div>
-                            <p class="article__paragraph discont-cards__paragraph" data-aos="rm-opacity" data-aos-duration="1000">
-                                Для получения 15% дисконтной карты, при наличии 10%, вам достаточно совершить покупку от 100 ₽
-                            </p>
-                        </div>
-                        <div class="discont-cards__list discont-cards__list_big">
-                            <div class="discont-cards__card" data-aos="flip-up" data-aos-duration="1000">
-                                <img src="./img/discont-cards/silver-card.png" alt="silver card">
-                            </div>
-                            <div class="discont-cards__card" data-aos="flip-up" data-aos-duration="1000">
-                                <img src="./img/discont-cards/gold-card.png" alt="gold card">
+                            <div class="service-card__article">
+                                <h3 class="service-card__name">Как купить</h3>
+                                <p class="service-card__paragraph">Как оформить заказ на сайте и что делать дальше</p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="discont-cards__part">
-                        <div class="discont-cards__article article">
-                            <p class="article__paragraph discont-cards__paragraph" data-aos="rm-opacity" data-aos-duration="1000">
-                                Как это работает в магазинах «АгроДом» (отдел сад и огород Энергии Праздника):
-                            </p>
-                            <div class="article__list-box list-box" data-aos="rm-opacity" data-aos-duration="1000">
-                                <ul class="list-box__list">
-                                    <li>при покупке на общую сумму от ЗОр, вы получаете <span>«Серебряную карту»</span>, которая даёт скидку 5% на все покупки</li>
-                                    <li>при общей сумме от 80 ₽, вам выдадут <span>«Золотую карту»</span>, которая даёт скидку 10% на все покупки</li>
-                                    <li>при общей сумме от 200 ₽, вам выдадут <span>«МР карту»</span>, которая даёт скидку 15% на все покупки</li>
-                                </ul>
+                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
+                            <div class="service-card__icon-box">
+                                <div class="service-card__icon">
+                                    <img src="./img/service-tiny-icon/icon2.svg" alt="Доставка">
+                                </div>
                             </div>
-                            <p class="article__paragraph discont-cards__paragraph" data-aos="rm-opacity" data-aos-duration="1000">
-                                Для получения дисконтных карт, при наличии 5% и 10%, вам достаточно приобрести товаров на 50 ₽ (когда 5% дисконт) и 120 ₽ (когда 10% дисконт) соответственно.
-                            </p>
+                            <div class="service-card__article">
+                                <h3 class="service-card__name">Доставка</h3>
+                                <p class="service-card__paragraph">Полная информация об условиях доставки товаров</p>
+                            </div>
                         </div>
-                        <div class="discont-cards__list discont-cards__list_small">
-                            <div class="discont-cards__card" data-aos="flip-up" data-aos-duration="1000">
-                                <img src="./img/discont-cards/card1.png" alt="card1">
+
+                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
+                            <div class="service-card__icon-box">
+                                <div class="service-card__icon">
+                                    <img src="./img/service-tiny-icon/icon3.svg" alt="Самовывоз">
+                                </div>
                             </div>
-                            <div class="discont-cards__card" data-aos="flip-up" data-aos-duration="1000">
-                                <img src="./img/discont-cards/card2.png" alt="card2">
+                            <div class="service-card__article">
+                                <h3 class="service-card__name">Самовывоз</h3>
+                                <p class="service-card__paragraph">Всё про получение товара и сроки хранения</p>
                             </div>
-                            <div class="discont-cards__card" data-aos="flip-up" data-aos-duration="1000">
-                                <img src="./img/discont-cards/card3.png" alt="card3">
+                        </div>
+
+                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
+                            <div class="service-card__icon-box">
+                                <div class="service-card__icon">
+                                    <img src="./img/service-tiny-icon/icon4.svg" alt="Кошелёк">
+                                </div>
+                            </div>
+                            <div class="service-card__article">
+                                <h3 class="service-card__name">Оплата</h3>
+                                <p class="service-card__paragraph">Формы оплаты при получении заказа</p>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-aos="category-card-animate" data-aos-duration="1200">
+                            <div class="service-card__icon-box">
+                                <div class="service-card__icon">
+                                    <img src="./img/service-tiny-icon/icon5.svg" alt="Возврат">
+                                </div>
+                            </div>
+                            <div class="service-card__article">
+                                <h3 class="service-card__name">Возврат товара</h3>
+                                <p class="service-card__paragraph">Информация о возврате товара</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="main__main-categoryes main-categoryes">
+                <div class="main-categoryes__container">
+                    <div class="main-categoryes__list">
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/for-customer/bg1.png" alt="Видеокаталог">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Видеокаталог</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/for-customer/bg2.png" alt="Статьи">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Статьи</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/for-customer/bg3.png" alt="Идеи подарков">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Идеи подарков</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/for-customer/bg4.png" alt="Техника безопасности">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Техника безопасности</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/for-customer/bg5.png" alt="Гарантия от производителя">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Гарантия от производителя</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-card" data-aos="category-card-animate" data-aos-duration="1000">
+                            <div class="category-card__wallpaper">
+                                <img src="./img/for-customer/bg6.png" alt="Политика конфиденциальности">
+                            </div>
+
+                            <div class="category-card__article">
+                                <h3 class="category-card__title">Политика конфиденциальности</h3>
+                            </div>
+
+                            <div class="category-card__frame">
+                                <a href="#" class="category-card__button button-filled">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__order order">
+                <div class="order__container">
+                    <div class="order-card" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="order__walpapper">
+                            <img src="./img/section-wallpapers/wallpaper.png" alt="Салют">
+                            <div class="walpapper-filter">
+                                <div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="order__article article">
+                            <h2 class="article__title" data-aos="fade-up" data-aos-duration="1000">Закажите бесплатную <br> консультацию!</h2>
+                            <p class="article__paragraph" data-aos="rm-opacity" data-aos-duration="1600" data-aos-delay="200">Сложно определиться с выбором? Нужна помощь специалиста? Позвоните нам или оставьте заявку на сайте — организуем ваш праздник вместе!</p>
+                        </div>
+                        <form class="order-form">
+                            <div class="order-form__inputs">
+                                <div class="order-form__el" data-aos="fade-up" data-aos-duration="800">
+                                    <label for="user-name" class="order-form__label">Ваше имя</label>
+                                    <div class="input-box">
+                                        <span>*</span>
+                                        <input type="text" class="order-form__input order-form__input_necessarily" id="user-name" placeholder="Ваше имя">
+                                    </div>
+                                </div>
+                                <div class="order-form__el" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                                    <label for="user-email" class="order-form__label">E-mail</label>
+                                    <div class="input-box">
+                                        <span>*</span>
+                                        <input type="text" class="order-form__input order-form__input_necessarily" id="user-email" placeholder="name@example.com">
+                                    </div>
+                                </div>
+                                <div class="order-form__el order-form__el_phone-number" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                    <label for="phone-number" class="order-form__label">Телефон</label>
+                                    <div class="input-box">
+                                        <span>*</span>
+                                        <input type="tel" class="order-form__input input-phone-number" id="phone-number" placeholder="+375 (xx) xxx-xx-xx">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="order-form__button button-filled"  data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+                                <span>Отправить</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer__container">
@@ -1094,7 +1248,7 @@
                             <label for="phone-number" class="order-form__label">Телефон</label>
                             <div class="input-box">
                                 <span>*</span>
-                                <input type="tel" class="order-form__input input-phone-number" id="phone-number" placeholder="+375 (xx) xxx-xx-xx">
+                                <input type="tel" class="order-form__input input-phone-number" name="phone-number" placeholder="+375 (xx) xxx-xx-xx">
                             </div>
                         </div>
                     </div>
@@ -1102,6 +1256,16 @@
                         <span>Отправить заказ</span>
                     </button>
                 </form>
+            </div>
+        </div>
+
+        <div class="popup video-popup">
+            <div class="video-popup__wrapper">
+                <div class="video-popup__header">
+                    <button class="video-popup__close" data-action="close-video-popup">x</button>
+                </div>
+                <div class="close-video-popup__video">
+                </div>
             </div>
         </div>
 
@@ -1131,10 +1295,8 @@
     <script src="./js/order-phone.js"></script>
     <script src="./js/content-margin.js"></script>
     <script src="./js/popup.js"></script>
-    <script src="./js/question.js"></script>
     <script src="./js/cart-popup.js"></script>
     <script src="./js/focus-input.js"></script>
-    <script src="./js/city-map-toggler.js"></script>
 
     <script src="./js/maska-nomera.js"></script>
     <script>

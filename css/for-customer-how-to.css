@@ -1,0 +1,166 @@
+.main__page-title .page-title__container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.main__safety {
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .main__safety {
+    margin-bottom: calc(0px + 50 * (100vw - 320px) / 880);
+  }
+}
+.main__safety .questions__question {
+  background-color: #FBE0E0;
+  border: 0px;
+}
+.main__safety .spoiler:hover .spoiler__icon {
+  background-color: transparent;
+}
+.main__safety .spoiler:hover .spoiler__icon path {
+  fill: #443E3E;
+}
+.main__safety .spoiler:hover .spoiler__name {
+  color: #443E3E;
+}
+.main__safety .spoiler__header {
+  height: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+}
+@media (max-width: 1200px) {
+  .main__safety .spoiler__header {
+    gap: calc(10px + 10 * (100vw - 320px) / 880);
+    height: calc(70px + 30 * (100vw - 320px) / 880);
+  }
+}
+.main__safety .spoiler__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+}
+@media (max-width: 1200px) {
+  .main__safety .spoiler__name {
+    font-size: calc(16px + 2 * (100vw - 320px) / 880);
+  }
+}
+.main__safety .spoiler__icon {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+@media (max-width: 1200px) {
+  .main__safety .spoiler__icon {
+    width: calc(30px + 10 * (100vw - 320px) / 880);
+    height: calc(30px + 10 * (100vw - 320px) / 880);
+  }
+}
+.main__safety .spoiler__icon svg {
+  width: 11px;
+}
+@media (max-width: 1200px) {
+  .main__safety .spoiler__icon svg {
+    width: calc(8px + 3 * (100vw - 320px) / 880);
+  }
+}
+.main__safety .spoiler__paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  color: #443E3E;
+  line-height: 0%;
+  opacity: 0;
+  -webkit-transition: line-height ease-in-out 0.3s, opacity ease-in-out 0.3s;
+  transition: line-height ease-in-out 0.3s, opacity ease-in-out 0.3s;
+}
+.main__safety .spoiler .bold {
+  font-weight: 700;
+  color: #443E3E;
+}
+.main__safety .spoiler__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  gap: 0px;
+  -webkit-transition: gap ease-in-out 0.3s, line-height ease-in-out 0.3s, opacity ease-in-out 0.3s, padding ease-in-out 0.3s;
+  transition: gap ease-in-out 0.3s, line-height ease-in-out 0.3s, opacity ease-in-out 0.3s, padding ease-in-out 0.3s;
+}
+.main__safety .spoiler._active .spoiler__icon {
+  background-color: transparent;
+}
+.main__safety .spoiler._active .spoiler__icon path {
+  fill: #443E3E;
+}
+.main__safety .spoiler._active .spoiler__name {
+  color: #443E3E;
+}
+.main__safety .spoiler._active .spoiler__paragraph {
+  line-height: 150%;
+  opacity: 1;
+}
+.main__safety .spoiler._active .spoiler__body {
+  gap: 12px;
+}
+.main__safety .spoiler._active .spoiler-list__title {
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+.main__safety .spoiler._active .spoiler-list {
+  line-height: 150%;
+}
+.main__service {
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .main__service {
+    margin-bottom: calc(50px + 50 * (100vw - 320px) / 880);
+  }
+}
+.main__how-to {
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .main__how-to {
+    margin-bottom: calc(30px + 20 * (100vw - 320px) / 880);
+  }
+}
+
+.how-to__article {
+  gap: 14px;
+  max-width: 800px;
+}
+.how-to__paragraph a {
+  color: #E81212;
+}
+.how-to__paragraph .number {
+  font-weight: 700;
+}
+
+.service_tiny .service-list {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 767.98px) {
+  .service_tiny .service-list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 567.98px) {
+  .service_tiny .service-list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
