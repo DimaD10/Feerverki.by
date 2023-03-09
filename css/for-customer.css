@@ -255,3 +255,23 @@
     height: calc(200px + 110 * (100vw - 320px) / 447.98);
   }
 }
+
+.main__safety-info {
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .main__safety-info {
+    margin-bottom: calc(0px + 50 * (100vw - 320px) / 880);
+  }
+}
+.main__safety-info .safety-info__article {
+  gap: 14px;
+}
+.main__safety-info .safety-info__title {
+  margin-bottom: 38px;
+}
+@media (max-width: 1200px) {
+  .main__safety-info .safety-info__title {
+    margin-bottom: calc(28px + 10 * (100vw - 320px) / 880);
+  }
+}

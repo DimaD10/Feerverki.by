@@ -1,0 +1,29 @@
+.main__head-page {
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .main__head-page {
+    margin-bottom: calc(50px + 50 * (100vw - 320px) / 880);
+  }
+}
+
+.main__how-to-choose {
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .main__how-to-choose {
+    margin-bottom: calc(50px + 50 * (100vw - 320px) / 880);
+  }
+}
+
+.how-to-choose__title {
+  margin-bottom: 38px;
+}
+@media (max-width: 1200px) {
+  .how-to-choose__title {
+    margin-bottom: calc(28px + 10 * (100vw - 320px) / 880);
+  }
+}
+.how-to-choose__paragraph:not(:last-child) {
+  margin-bottom: 14px;
+}
