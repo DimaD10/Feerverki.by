@@ -92,3 +92,16 @@ const gallerySlider = new Swiper('.festival-gallery__slider', {
         }
     },
 });
+
+const productSlider = new Swiper('.product-list-slider', {
+    loop: true,
+    slidesPerView: 4,
+    
+    pagination: {
+        el: '.product-list-slider__pagination',
+    },
+    navigation: {
+        nextEl: '.product-list-slider__btn-next',
+        prevEl: '.product-list-slider__btn-prev',
+    },
+});
