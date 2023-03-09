@@ -4755,6 +4755,11 @@ body::-webkit-scrollbar-thumb {
 }
 .service_tiny .service-card__name {
   text-align: left;
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+}
+.service_tiny .service-card__name:hover {
+  color: #E81212;
 }
 
 .service-list {

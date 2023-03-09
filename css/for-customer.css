@@ -123,3 +123,93 @@
   line-height: 150%;
   color: #443E3E;
 }
+
+.head-page {
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .head-page {
+    margin-bottom: calc(50px + 50 * (100vw - 320px) / 880);
+  }
+}
+
+.main__video-catalog {
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .main__video-catalog {
+    margin-bottom: calc(0px + 50 * (100vw - 320px) / 880);
+  }
+}
+
+.video-catalog__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .video-catalog__list {
+    margin-bottom: calc(30px + 20 * (100vw - 320px) / 880);
+    gap: calc(20px + 10 * (100vw - 320px) / 880);
+  }
+}
+@media (max-width: 991.98px) {
+  .video-catalog__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767.98px) {
+  .video-catalog__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+.video-catalog__post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+}
+@media (max-width: 1200px) {
+  .video-catalog__post {
+    gap: calc(10px + 10 * (100vw - 320px) / 880);
+  }
+}
+.video-catalog__video {
+  width: 100%;
+}
+.video-catalog__video iframe {
+  width: 100%;
+  height: 215px;
+}
+@media (max-width: 991.98px) {
+  .video-catalog__video iframe {
+    height: calc(215px + 85 * (100vw - 767.98px) / 224);
+  }
+}
+@media (max-width: 767.98px) {
+  .video-catalog__video iframe {
+    height: calc(190px + 110 * (100vw - 320px) / 447.98);
+  }
+}
+.video-catalog__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #443E3E;
+  text-transform: uppercase;
+}
