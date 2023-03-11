@@ -169,8 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
-  overflow: hidden;
+  min-height: 100%;
   position: relative;
 }
 
@@ -188,10 +187,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  scroll-behavior: smooth;
   font-family: Rubik;
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  max-width: 100vw;
   scrollbar-width: thin;
 }
 body::-webkit-scrollbar {
@@ -1799,8 +1800,8 @@ body::-webkit-scrollbar-thumb {
   overflow-y: auto;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5490196078);
   z-index: 9999;
   display: none;
@@ -2884,7 +2885,7 @@ body::-webkit-scrollbar-thumb {
 .header {
   z-index: 999;
   position: fixed;
-  width: 100%;
+  width: 100vw;
 }
 .header__burger {
   display: none;

@@ -99,9 +99,33 @@ const productSlider = new Swiper('.product-list-slider', {
     
     pagination: {
         el: '.product-list-slider__pagination',
+        clickable: true,
     },
     navigation: {
         nextEl: '.product-list-slider__btn-next',
         prevEl: '.product-list-slider__btn-prev',
+    },
+
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        567.98: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767.98: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        991.98: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        }
     },
 });
