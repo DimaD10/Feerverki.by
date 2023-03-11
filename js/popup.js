@@ -21,7 +21,7 @@ document.addEventListener("click", (e) => {
         
     } else if (e.target.dataset.action === "close-video-popup") {
         vModal.classList.remove("_opened");
-        body.style.overflow = `none`;
+        body.style.overflow = `auto`;
     }
 })
 document.addEventListener("click", (e) => {
@@ -30,10 +30,10 @@ document.addEventListener("click", (e) => {
         body.style.overflow = `hidden`;
     } else if (e.target.dataset.action === "close-order-on-one-click") {
         oModal.classList.remove("_opened");
-        body.style.overflow = `none`;
+        body.style.overflow = `auto`;
     } else if (e.target.dataset.action === "close-thanks") {
         tModal.classList.remove("_opened");
-        body.style.overflow = `none`;
+        body.style.overflow = `auto`;
     }
 })
 
@@ -41,42 +41,42 @@ document.addEventListener('keydown', function(event) {
     if(vModal.classList.contains("_opened")) {
         if (event.key == 'Escape') {
             vModal.classList.remove('_opened');
-            body.style.overflow = `none`;  
+            body.style.overflow = `auto`;  
         }
     } else if (oModal.classList.contains("_opened")) {
         if (event.key == 'Escape') {
             oModal.classList.remove('_opened');
-            body.style.overflow = `none`;  
+            body.style.overflow = `auto`;  
         }
     } else if (tModal.classList.contains("_opened")) {
         if (event.key == 'Escape') {
             tModal.classList.remove('_opened');
-            body.style.overflow = `none`;  
+            body.style.overflow = `auto`;  
         }
     }
 });
 vModal.addEventListener('click', (e) => {
     if (e.target == vModal && e.target !== vModal.querySelector(".video-popup__wrapper")) {
         vModal.classList.remove('_opened');
-        body.style.overflow = `none`;  
+        body.style.overflow = `auto`;  
     }
 });
 oModal.addEventListener('click', (e) => {
     if (e.target == oModal && e.target !== oModal.querySelector(".order-on-one-click__wrapper")) {
         oModal.classList.remove('_opened');
-        body.style.overflow = `none`;  
+        body.style.overflow = `auto`;  
     }
 });
 tModal.addEventListener('click', (e) => {
     if (e.target == tModal && e.target !== tModal.querySelector(".thanks-popup__wrapper")) {
         tModal.classList.remove('_opened');
-        body.style.overflow = `none`;  
+        body.style.overflow = `auto`;  
     }
 });
 
 function callThanksPopup() {
     tModal.classList.add("_opened");
-    body.style.overflow = `none`;
+    body.style.overflow = `auto`;
 }
 
 

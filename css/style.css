@@ -6894,3 +6894,20 @@ body::-webkit-scrollbar-thumb {
 .order-form__el._input-focus .order-form__label {
   color: #FCCD05;
 }
+
+.order-on-one-click__product.product-order {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.popup-cart .product-order {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: transparent;
+}

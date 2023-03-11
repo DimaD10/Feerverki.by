@@ -129,3 +129,28 @@ const productSlider = new Swiper('.product-list-slider', {
         }
     },
 });
+
+const sliderForProduct = new Swiper('.product-preview__slider-show', {
+    loop: true,
+    slidesPerView: 1,
+
+    effect: 'fade',
+
+    navigation: {
+        nextEl: '.product-btn-next',
+        prevEl: '.product-btn-prev',
+    },
+
+    thumbs: {
+        swiper: {
+            el: '.product-preview__thumbs',
+            slidesPerView: 4,
+        }
+    }
+});
+/*
+const thumbsForProduct = new Swiper('.product-preview__thumbs', {
+    loop: true,
+    slidesPerView: 1,
+    direction: vertical,
+});*/

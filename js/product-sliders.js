@@ -6,7 +6,7 @@ $('.product-preview__slider').slick({
 });
 
 
-
+/*
 $('.product-preview__slider-show').slick({
   infinite: false,
   slidesToShow: 1,
@@ -36,4 +36,4 @@ $('.product-preview__thumbs').slick({
       }
     }
   ]
-});
+});*/
