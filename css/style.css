@@ -1804,11 +1804,17 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5490196078);
   z-index: 9999;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px 15px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s;
 }
 .video-popup__wrapper {
   display: -webkit-box;
@@ -1818,6 +1824,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, transform ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 .video-popup__header {
   display: -webkit-box;
@@ -1861,9 +1874,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .video-popup._opened {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  pointer-events: all;
+}
+.video-popup._opened .video-popup__wrapper {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .popup-video__text {
@@ -1879,7 +1896,9 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5490196078);
   z-index: 999;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1887,6 +1906,10 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 30px 10px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s;
 }
 @media (max-width: 567.98px) {
   .order-on-one-click {
@@ -1906,6 +1929,13 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, transform ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 @media (max-width: 767.98px) {
   .order-on-one-click__wrapper {
@@ -2081,9 +2111,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .order-on-one-click._opened {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  pointer-events: all;
+}
+.order-on-one-click._opened .order-on-one-click__wrapper {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .thanks-popup {
@@ -2091,8 +2125,10 @@ body::-webkit-scrollbar-thumb {
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5490196078);
-  z-index: 999;
-  display: none;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2100,6 +2136,10 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 30px 10px;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s;
 }
 @media (max-width: 567.98px) {
   .thanks-popup {
@@ -2119,6 +2159,13 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, transform ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 @media (max-width: 767.98px) {
   .thanks-popup__wrapper {
@@ -2204,9 +2251,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .thanks-popup._opened {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  pointer-events: all;
+}
+.thanks-popup._opened .thanks-popup__wrapper {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .shares-list {
@@ -3950,15 +4001,16 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5490196078);
   padding: 60px 15px 0 15px;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-@media (min-width: 991.98px) {
-  .order-phone {
-    display: none;
-  }
+  -webkit-transition: opacity ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s;
+  opacity: 0;
+  pointer-events: none;
 }
 @media (max-height: 420px) {
   .order-phone {
@@ -3980,6 +4032,13 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   background-color: #fff;
   padding: 10px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, transform ease-in-out 0.6s;
+  transition: opacity ease-in-out 0.6s, transform ease-in-out 0.6s, -webkit-transform ease-in-out 0.6s;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 .order-phone__header {
   display: -webkit-box;
@@ -4026,9 +4085,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .order-phone._active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  pointer-events: all;
+}
+.order-phone._active .order-phone__wrapper {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .main__fisrt-screen {
@@ -6940,6 +7003,10 @@ body::-webkit-scrollbar-thumb {
           flex-direction: row;
   background-color: #fff;
   padding: 10px;
+}
+
+.order-on-one-click .order-form__button span {
+  pointer-events: none;
 }
 
 .popup-cart .product-order {

@@ -23,6 +23,11 @@ document.addEventListener("click", (e) => {
         vModal.classList.remove("_opened");
         body.style.overflow = `auto`;
     }
+
+    if (e.target.dataset.action === "call-thanks") {
+        callThanksPopup();
+        oModal.classList.remove('_opened');
+    }
 })
 document.addEventListener("click", (e) => {
     if (e.target.dataset.action === 'order-to-one-click') {
@@ -76,8 +81,11 @@ tModal.addEventListener('click', (e) => {
 
 function callThanksPopup() {
     tModal.classList.add("_opened");
+} 
+function closeThanksPopup() {
+    tModal.classList.remove("_opened");
     body.style.overflow = `auto`;
-}
+} 
 
 
 //callThanksPopup();  // - откритие модалки с благодарностью
