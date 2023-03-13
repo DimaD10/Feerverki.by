@@ -462,8 +462,8 @@
   color: #443E3E;
   line-height: 0%;
   opacity: 0;
-  -webkit-transition: line-height ease-in-out 0.3s, opacity ease-in-out 0.3s;
-  transition: line-height ease-in-out 0.3s, opacity ease-in-out 0.3s;
+  -webkit-transition: line-height ease-in-out 0.2s, opacity ease-in-out 0.2s;
+  transition: line-height ease-in-out 0.2s, opacity ease-in-out 0.2s;
 }
 .main__safety .spoiler .bold {
   font-weight: 700;
@@ -479,8 +479,8 @@
           flex-direction: column;
   overflow: hidden;
   gap: 0px;
-  -webkit-transition: gap ease-in-out 0.3s, line-height ease-in-out 0.3s, opacity ease-in-out 0.3s, padding ease-in-out 0.3s;
-  transition: gap ease-in-out 0.3s, line-height ease-in-out 0.3s, opacity ease-in-out 0.3s, padding ease-in-out 0.3s;
+  -webkit-transition: gap ease-in-out 0.2s, line-height ease-in-out 0.2s, opacity ease-in-out 0.2s, padding ease-in-out 0.2s;
+  transition: gap ease-in-out 0.2s, line-height ease-in-out 0.2s, opacity ease-in-out 0.2s, padding ease-in-out 0.2s;
 }
 .main__safety .spoiler._active .spoiler__icon {
   background-color: transparent;
@@ -508,8 +508,8 @@
 
 .spoiler-list {
   line-height: 0%;
-  -webkit-transition: line-height ease-in-out 0.3s;
-  transition: line-height ease-in-out 0.3s;
+  -webkit-transition: line-height ease-in-out 0.2s;
+  transition: line-height ease-in-out 0.2s;
 }
 .spoiler-list__title {
   font-weight: 700;
@@ -517,8 +517,8 @@
   line-height: 150%;
   color: #443E3E;
   line-height: 0%;
-  -webkit-transition: line-height ease-in-out 0.3s;
-  transition: line-height ease-in-out 0.3s;
+  -webkit-transition: line-height ease-in-out 0.2s;
+  transition: line-height ease-in-out 0.2s;
 }
 .spoiler-list__list li {
   margin-left: 8px;

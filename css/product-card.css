@@ -312,10 +312,10 @@
   }
 }
 .product .product-preview__thumbs .product-preview__slide img {
-  -webkit-transition: -webkit-transform ease-in-out 0.3s;
-  transition: -webkit-transform ease-in-out 0.3s;
-  transition: transform ease-in-out 0.3s;
-  transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
+  -webkit-transition: -webkit-transform ease-in-out 0.2s;
+  transition: -webkit-transform ease-in-out 0.2s;
+  transition: transform ease-in-out 0.2s;
+  transition: transform ease-in-out 0.2s, -webkit-transform ease-in-out 0.2s;
 }
 .product .product-preview__thumbs .product-preview__slide:hover img {
   -webkit-transform: scale(1.1);
@@ -343,8 +343,8 @@
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   cursor: pointer;
-  -webkit-transition: background-color ease-in-out 0.3s;
-  transition: background-color ease-in-out 0.3s;
+  -webkit-transition: background-color ease-in-out 0.2s;
+  transition: background-color ease-in-out 0.2s;
   position: relative;
 }
 @media (max-width: 991.98px) {
@@ -379,8 +379,8 @@
   background: url("../img/icons/arrow-right.svg") no-repeat;
   background-size: contain;
   background-position: center;
-  -webkit-transition: opacity ease-in-out 0.3s;
-  transition: opacity ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.2s;
+  transition: opacity ease-in-out 0.2s;
 }
 .product .product-preview__thumbs .product-btn-navigation::after {
   content: "";
@@ -850,8 +850,8 @@
   color: #443E3E;
   border: 1px solid transparent;
   background-color: transparent;
-  -webkit-transition: border ease-in-out 0.3s;
-  transition: border ease-in-out 0.3s;
+  -webkit-transition: border ease-in-out 0.2s;
+  transition: border ease-in-out 0.2s;
   position: relative;
 }
 @media (max-width: 1200px) {
@@ -870,8 +870,8 @@
   background: -webkit-gradient(linear, left top, right top, from(#E81212), to(#FCCD05));
   background: linear-gradient(90deg, #E81212 0%, #FCCD05 100%);
   opacity: 0;
-  -webkit-transition: opacity ease-in-out 0.3s;
-  transition: opacity ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.2s;
+  transition: opacity ease-in-out 0.2s;
 }
 .navigation-list__button span {
   font-weight: 300;
@@ -880,8 +880,8 @@
   text-transform: uppercase;
   pointer-events: none;
   white-space: nowrap;
-  -webkit-transition: color ease-in-out 0.3s;
-  transition: color ease-in-out 0.3s;
+  -webkit-transition: color ease-in-out 0.2s;
+  transition: color ease-in-out 0.2s;
 }
 @media (max-width: 1200px) {
   .navigation-list__button span {

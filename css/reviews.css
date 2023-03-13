@@ -122,8 +122,8 @@
   color: #FDEFB6;
   font-size: 22px;
   cursor: pointer;
-  -webkit-transition: color ease-in-out 0.3s;
-  transition: color ease-in-out 0.3s;
+  -webkit-transition: color ease-in-out 0.2s;
+  transition: color ease-in-out 0.2s;
 }
 .user-rate__item:hover {
   color: #ccc;

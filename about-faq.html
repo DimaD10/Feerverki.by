@@ -1057,6 +1057,7 @@
                 </div>
             </section>
 
+            
             <section class="main__order order">
                 <div class="order__container">
                     <div class="order-card" data-aos="fade-up" data-aos-duration="1200">
@@ -1088,10 +1089,10 @@
                                     </div>
                                 </div>
                                 <div class="order-form__el order-form__el_phone-number" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                    <label for="phone-number" class="order-form__label">Телефон</label>
+                                    <label for="order-phone-number" class="order-form__label">Телефон</label>
                                     <div class="input-box">
                                         <span>*</span>
-                                        <input type="tel" class="order-form__input input-phone-number" id="phone-number" placeholder="+375 (xx) xxx-xx-xx">
+                                        <input type="tel" class="order-form__input input-phone-number" id="order-phone-number" placeholder="+375 (xx) xxx-xx-xx">
                                     </div>
                                 </div>
                             </div>
@@ -1212,10 +1213,10 @@
                 <form class="order-form">
                     <div class="order-form__inputs">
                         <div class="order-form__el">
-                            <label for="order-name" class="order-form__label">Ваше имя</label>
+                            <label for="one-click-order-name" class="order-form__label">Ваше имя</label>
                             <div class="input-box">
                                 <span>*</span>
-                                <input type="text" class="order-form__input order-form__input_necessarily" id="order-name" placeholder="Ваше имя">
+                                <input type="text" class="order-form__input order-form__input_necessarily" id="one-click-order-name" placeholder="Ваше имя">
                             </div>
                         </div>
                         <div class="order-form__el order-form__el_phone-number">
@@ -1230,6 +1231,63 @@
                         <span>Отправить заказ</span>
                     </button>
                 </form>
+            </div>
+        </div>
+
+
+        <div class="popup order-on-one-click ">
+            <div class="order-on-one-click__wrapper">
+                <button class="order-on-one-click__close" data-action="close-order-on-one-click">
+                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.0957 0.0878868C10.336 0.451168 7.85158 1.5 5.59572 3.26953C5.06252 3.68554 3.68557 5.06836 3.26369 5.60742C1.47658 7.86914 0.398458 10.4883 0.0644735 13.3301C-0.0175578 13.998 -0.0175578 15.9902 0.0586141 16.6406C0.357442 19.1602 1.1426 21.2988 2.53127 23.3789C4.36525 26.1152 7.10158 28.2012 10.2129 29.2441C11.0449 29.5195 11.6192 29.666 12.5684 29.8301C13.5821 30.0117 15.7383 30.0527 16.8223 29.9121C20.2149 29.4902 23.1797 28.0371 25.6113 25.6113C28.0723 23.1445 29.5781 20.0215 29.9414 16.6289C30.0293 15.7852 30.0117 13.9629 29.9121 13.125C29.4844 9.69726 27.9082 6.57421 25.3594 4.13086C23.0215 1.88086 20.0801 0.492184 16.8164 0.0820274C15.9903 -0.0175819 13.9102 -0.0175819 13.0957 0.0878868ZM10.7461 9.15234C10.9512 9.21093 11.3028 9.5332 12.9961 11.2148L15 13.207L17.0098 11.2148C19.0899 9.14062 19.166 9.08203 19.6348 9.08203C20.2852 9.08203 20.918 9.71484 20.918 10.3652C20.918 10.834 20.8594 10.9102 18.7852 12.9902L16.793 15L18.7852 17.0098C20.8594 19.0898 20.918 19.166 20.918 19.6348C20.918 20.2852 20.2852 20.918 19.6348 20.918C19.166 20.918 19.0899 20.8594 17.0098 18.7852L15 16.793L12.9961 18.7852C10.9102 20.8594 10.834 20.918 10.3653 20.918C9.71486 20.918 9.08205 20.2852 9.08205 19.6348C9.08205 19.166 9.14065 19.0898 11.2149 17.0039L13.2071 15L11.2149 12.9902C9.14065 10.9102 9.08205 10.834 9.08205 10.3652C9.08205 9.73242 9.709 9.09375 10.336 9.08203C10.4297 9.08203 10.6113 9.11132 10.7461 9.15234Z" fill="#CCCCCC"/>
+                    </svg>
+                </button>
+
+                <div class="order-on-one-click__article article">
+                    <h3 class="article__title order-on-one-click__title">Заказать в 1 клик</h3>
+                </div>
+                <div class="order-on-one-click__product product-order">
+                    <a href="#" class="product-order__preview">
+                        <img src="./img/product-list/product1.png" alt="Цветной дым голубой Sky Blue MA0509">
+                    </a>
+                    <div class="product-order__offer">
+                        <a href="#" class="product-order__title">Цветной дым голубой Sky Blue MA0509</a>
+                        <span class="product-order__counter">
+                            <span class="product-order__count">1</span> x <span class="product-order__price">12.00 BYN</span>
+                        </span>
+                    </div>
+                </div>
+                <form class="order-form">
+                    <div class="order-form__inputs">
+                        <div class="order-form__el">
+                            <label for="order-name" class="order-form__label">Ваше имя</label>
+                            <div class="input-box">
+                                <span>*</span>
+                                <input type="text" class="order-form__input order-form__input_necessarily" id="order-name" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="order-form__el order-form__el_phone-number">
+                            <label for="phone-number" class="order-form__label">Телефон</label>
+                            <div class="input-box">
+                                <span>*</span>
+                                <input type="tel" class="order-form__input input-phone-number" name="phone-number" placeholder="+375 (xx) xxx-xx-xx">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="order-form__button button-filled">
+                        <span>Отправить заказ</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup video-popup">
+            <div class="video-popup__wrapper">
+                <div class="video-popup__header">
+                    <button class="video-popup__close" data-action="close-video-popup">x</button>
+                </div>
+                <div class="close-video-popup__video">
+                </div>
             </div>
         </div>
 
